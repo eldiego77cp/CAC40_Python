@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    
+</head>
+
+<header style="background-color: #FFC100; height: 100px; border-style: solid; border-color:#E70F0F; ">
+    
+    <a name="top"></a>
+    <a href="../index.html" style="background-color: #D26C00;">Home</a>
+    <a href="acerca_de.html" style="background-color: #D26C00;">A cerca de</a>
+    <a href="contacto.html" style="background-color: #D26C00;">Contacto</a>
+    <a href="#top" style="background-color: #D26C00;">Registrarse</a>
+    <a href="sucursales.html" style="background-color: #D26C00;">Sucursales</a>
+
+    <h1 style="text-align: center; "><strong>La Cocina De La Nona</strong></h1>
+
+  </header>
+
+<body style="height: 800px;">
+
+    <h2>Registrarse</h2><br>
+    <form action="datos_formulario.html" id="form1" method="POST" target="_blank">
+
+        Nombre<b style="color: red">*</b> <input type="text" name="nombre" id="nombre" size="30" maxlength="100" placeholder="Indique su nombre aquí" required>
+        <br>
+        Apellido<b style="color: red">*</b> <input type="text" name="apellido" id="apellido" size="30" maxlength="100" placeholder="Indique su apellido aquí" required>
+        <br>
+        Dirección<b style="color: red">*</b> <input type="text" name="direccion" id="direccion" size="30" maxlength="100" placeholder="Indique su dirección aquí" required>
+        <br>
+        <!--Ciudad<input type="text" name="ciudad" size="30" maxlength="100" placeholder="C.A.B.A.">-->
+        Ciudad <select name="ciudad" id="ciudad">
+
+                  <option value="default" selected></option>
+                  <option value="901">Ciudad de Buenos Aires</option>
+                  <option value="902">Provincia de Buenos Aires</option>
+                  <option value="903">Catamarca</option>
+                  <option value="904">Córdoba</option>
+                  <option value="905">Corrientes</option>
+                  <option value="906">Chaco</option>
+                  <option value="907">Chubut</option>
+                  <option value="908">Entre Ríos</option>
+                  <option value="909">Formosa</option>
+                  <option value="910">Jujuy</option>
+                  <option value="911">La Pampa</option>
+                  <option value="912">La Rioja</option>
+                  <option value="913">Mendoza</option>
+                  <option value="914">Misiones</option>
+                  <option value="915">Neuquén</option>
+                  <option value="916">Rí­o Negro</option>
+                  <option value="917">Salta</option>
+                  <option value="918">San Juan</option>
+                  <option value="919">San Luis</option>
+                  <option value="920">Santa Cruz</option>
+                  <option value="921">Santa Fe</option>
+                  <option value="922">Santiago del Estero</option>
+                  <option value="923">Tierra del Fuego</option>
+                  <option value="924">ucumán</option>
+          
+                  </select>
+
+        <br>
+        Código Postal<b style="color: red">*</b> <input type="text" name="cp" id="cp" size="30" maxlength="8" placeholder="Indique su CP aquí" required>
+        <br>
+        Fecha de Nacimiento<b style="color: red">*</b> <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" size="10" maxlength="10" required>
+        <br>
+        Género: 
+        <input type="radio" name="hombre" id="hombre" value="Hombre" checked>Hombre
+        <input type="radio" name="mujer" id="mujer" value="Mujer">Mujer
+        <input type="radio" name="otro" id="otro" value="Otro">Otro
+        <br>
+        Estudios: <input type="checkbox" name="primarios" id="primarios">Primarios
+        <input type="checkbox" name="secundarios" id="secundarios">Secundarios
+        <input type="checkbox" name="terciarios" id="terciarios">Terciarios
+        <input type="checkbox" name="universitarios" id="universitarios">Universitarios
+        <input type="checkbox" name="otro" id="otro">Otro
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <br>
+        <br>
+        Si Ud hace click en el botón "Enviar", la información será enviada a la página "show_data.html"
+        <br>
+        <br>
+        <script src="js/app.js"></script>
+
+    </form>
+
+</body>
+
+<footer style="background-color: #FFC100; height: 100px; text-align:center; border-style: solid; border-color:#E70F0F; ">
+  
+  <p style="text-align: center;">
+    <a href="http://www.facebook.com" title="Facebook" target="_blank">
+      <img src="https://image.flaticon.com/icons/png/512/2504/2504903.png" alt="Facebook" width="16" height="16"></a>
+    <a href="http://www.twitter.com" title="Twitter" target="_blank">
+      <img src="https://image.flaticon.com/icons/png/512/3256/3256013.png" alt="Twitter" width="16" height="16"></a>
+    <a href="http://www.instagram.com" title="Instagram" target="_blank">
+      <img src="https://image.flaticon.com/icons/png/512/3670/3670125.png" alt="Instagram" width="16" height="16"></a>
+    <a href="http://www.pinterest.com" title="Pinterest" target="_blank">
+      <img src="https://image.flaticon.com/icons/png/512/2175/2175205.png" alt="Pinterest" width="16" height="16"></a>
+    <a href="http://www.linkedin.com" title="LinkedIn" target="_blank">
+      <img src="https://image.flaticon.com/icons/png/512/3536/3536505.png" alt="LinkedIn" width="16" height="16"></a>
+    <a href="http://www.youtube.com" title="Youtube" target="_blank">
+      <img src="https://image.flaticon.com/icons/png/512/3991/3991722.png" alt="LinkedIn" width="16" height="16"></a>
+  </p>
+  <h4><strong>Derechos Reservados @2021 - La Nona</strong></h4>
+  
+</footer>
+
+</html>
