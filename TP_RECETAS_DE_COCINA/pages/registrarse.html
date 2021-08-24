@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
 
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/style.css">
       <title>Registrarse</title>
       
   </head>
 
   <body style="height: 800px;">
 
-    <header style="background-color: #FFC100; height: 100px; border-style: solid; border-color:#E70F0F; ">
+    <header>
       
       <a id="top"></a>
-      <a href="../index.html" style="background-color: #D26C00;">Home</a>
-      <a href="acerca_de.html" style="background-color: #D26C00;">A cerca de</a>
-      <a href="contacto.html" style="background-color: #D26C00;">Contacto</a>
-      <a href="#top" style="background-color: #D26C00;">Registrarse</a>
-      <a href="sucursales.html" style="background-color: #D26C00;">Sucursales</a>
+      <a class="linksheader" href="../index.html" >Home</a>
+      <a class="linksheader" href="acerca_de.html" >A cerca de</a>
+      <a class="linksheader" href="contacto.html" >Contacto</a>
+      <a class="linksheader" href="#top" >Registrarse</a>
+      <a class="linksheader" href="sucursales.html" >Sucursales</a>
 
       <h1 style="text-align: center; "><strong>La Cocina De La Nona</strong></h1>
 
@@ -30,57 +31,67 @@
       <h2>Registrarse</h2><br>
       
       <form action="datos_formulario.html" id="form1" method="GET" target="_blank">
-
-        Nombre:<b style="color: red">*</b> <input type="text" name="nombre" id="nombre" size="30" maxlength="100" placeholder="Indique su nombre aquí" required>
+        
+        <label for="nombre">Nombre:<b style="color: red">*</b></label>
+        <input type="text" name="nombre" id="nombre" size="30" maxlength="100" placeholder="Indique su nombre aquí" required>
         <br>
-        Apellido:<b style="color: red">*</b> <input type="text" name="apellido" id="apellido" size="30" maxlength="100" placeholder="Indique su apellido aquí" required>
+        <label for="apellido">Apellido:<b style="color: red">*</b></label>
+        <input type="text" name="apellido" id="apellido" size="30" maxlength="100" placeholder="Indique su apellido aquí" required>
         <br>
-        Dirección:<b style="color: red">*</b> <input type="text" name="direccion" id="direccion" size="30" maxlength="100" placeholder="Indique su dirección aquí" required>
+        <label for="direccion">Dirección:<b style="color: red">*</b></label>
+        <input type="text" name="direccion" id="direccion" size="30" maxlength="100" placeholder="Indique su dirección aquí" required>
         <br>
-        <!--Ciudad<input type="text" name="ciudad" size="30" maxlength="100" placeholder="C.A.B.A.">-->
-        Ciudad <select name="ciudad" id="ciudad">
-
-                  <option value="901">Ciudad de Buenos Aires</option>
-                  <option value="902">Provincia de Buenos Aires</option>
-                  <option value="903">Catamarca</option>
-                  <option value="904">Córdoba</option>
-                  <option value="905">Corrientes</option>
-                  <option value="906">Chaco</option>
-                  <option value="907">Chubut</option>
-                  <option value="908">Entre Ríos</option>
-                  <option value="909">Formosa</option>
-                  <option value="910">Jujuy</option>
-                  <option value="911">La Pampa</option>
-                  <option value="912">La Rioja</option>
-                  <option value="913">Mendoza</option>
-                  <option value="914">Misiones</option>
-                  <option value="915">Neuquén</option>
-                  <option value="916">Rí­o Negro</option>
-                  <option value="917">Salta</option>
-                  <option value="918">San Juan</option>
-                  <option value="919">San Luis</option>
-                  <option value="920">Santa Cruz</option>
-                  <option value="921">Santa Fe</option>
-                  <option value="922">Santiago del Estero</option>
-                  <option value="923">Tierra del Fuego</option>
-                  <option value="924">ucumán</option>
-          
-                </select>
+        <!-- Ciudad<input type="text" name="ciudad" size="30" maxlength="100" placeholder="C.A.B.A."> -->
+        <label for="ciudad">Ciudad:<b style="color: red">*</b></label>
+        <select name="ciudad" id="ciudad">
+          <option value="901">Ciudad de Buenos Aires</option>
+          <option value="902">Provincia de Buenos Aires</option>
+          <option value="903">Catamarca</option>
+          <option value="904">Córdoba</option>
+          <option value="905">Corrientes</option>
+          <option value="906">Chaco</option>
+          <option value="907">Chubut</option>
+          <option value="908">Entre Ríos</option>
+          <option value="909">Formosa</option>
+          <option value="910">Jujuy</option>
+          <option value="911">La Pampa</option>
+          <option value="912">La Rioja</option>
+          <option value="913">Mendoza</option>
+          <option value="914">Misiones</option>
+          <option value="915">Neuquén</option>
+          <option value="916">Rí­o Negro</option>
+          <option value="917">Salta</option>
+          <option value="918">San Juan</option>
+          <option value="919">San Luis</option>
+          <option value="920">Santa Cruz</option>
+          <option value="921">Santa Fe</option>
+          <option value="922">Santiago del Estero</option>
+          <option value="923">Tierra del Fuego</option>
+          <option value="924">ucumán</option>
+        </select>
         <br>
-        Código Postal:<b style="color: red">*</b> <input type="text" name="cp" id="cp" size="30" maxlength="8" placeholder="Indique su CP aquí" required>
+        <label for="cp">Código Postal:<b style="color: red">*</b></label>
+        <input type="text" name="cp" id="cp" size="30" maxlength="8" placeholder="Indique su CP aquí" required>
         <br>
-        Fecha de Nacimiento:<b style="color: red">*</b> <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" size="10" required>
+        <label for="fecha_nacimiento">Fecha de Nacimiento:<b style="color: red">*</b></label>
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" size="10" required>
         <br>
-        Género: 
+        <label for="sexo">Sexo:</label>
         <input type="radio" name="sexo" id="hombre" value="Hombre" checked>Hombre
         <input type="radio" name="sexo" id="mujer" value="Mujer">Mujer
         <input type="radio" name="sexo" id="x" value="X">No Binario
         <br>
-        Estudios: <input type="checkbox" name="primarios" id="primarios">Primarios
+        <label for="estudios">Estudios:</label>
+        <input type="checkbox" name="primarios" id="primarios">Primarios
         <input type="checkbox" name="secundarios" id="secundarios">Secundarios
         <input type="checkbox" name="terciarios" id="terciarios">Terciarios
         <input type="checkbox" name="universitarios" id="universitarios">Universitarios
         <input type="checkbox" name="otro" id="otro">Otro
+        <br>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" title="Comentarios" rows="10" cols="50">
+
+        </textarea>
         <br>
         <br>
         <input type="submit" value="Enviar">
@@ -95,9 +106,9 @@
     
     </main>
 
-    <footer style="background-color: #FFC100; height: 100px; text-align:center; border-style: solid; border-color:#E70F0F; ">
+    <footer>
             
-      <p style="text-align: center;">
+      <p class="pfooter">
           <a href="http://www.facebook.com" title="Facebook" target="_blank">
               <img src="https://image.flaticon.com/icons/png/512/2504/2504903.png" alt="Facebook" width="16" height="16">
           </a>

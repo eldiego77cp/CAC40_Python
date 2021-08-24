@@ -1,0 +1,27 @@
+/* Esto es un comentario */
+
+/* Selector Type */
+header {
+        background-color: #FFC100;
+        height: 100px;
+        border-style: solid;
+        border-color:#E70F0F;
+}
+
+footer {
+        background-color: #FFC100; 
+        height: 100px; 
+        text-align:center; 
+        border-style: solid; 
+        border-color:#E70F0F;
+}
+
+/* Selector Class */
+.linksheader {
+                background-color: #D26C00; 
+                padding: 3px;
+}
+
+.pfooter {
+            text-align: center;
+}
