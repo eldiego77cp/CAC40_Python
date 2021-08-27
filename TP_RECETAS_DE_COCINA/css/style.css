@@ -2,76 +2,95 @@
 
 /* Selector Type */
 header {
-        background-color: #FFC100;
-        height: 100px;
-        border-style: solid;
-        border-color:#E70F0F;
+        /* header style */ 
+        background-color: black;
+        height: auto;
+        /* header text */
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+}
+nav {
+        padding: 1em 1em 1em 0em;
+}
+
+main {
+        padding: 1em 1em 1em 0em;
 }
 
 footer {
-        background-color: #FFC100; 
-        height: 100px; 
-        text-align:center; 
-        border-style: solid; 
-        border-color:#E70F0F;
+        /* footer style */ 
+        background-color: black;
+        height: auto;
+        border-style: solid;
+        margin: 0.25em;
+        padding: 0.5em;
+        /* footer text */
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        text-align: center;
+        
 }
 
 /* Selector Class */
 
 /* Etiquetas */
-.linksheader {
-                background-color: #D26C00; 
-                padding: 3px;
+.linkindex {
+        color: white;
+        background-color: #838383; 
+        margin: 0.5em;
+        padding: 0.5em;
+        border-radius: 0.3em;
+        /*text-decoration: none;*/           
 }
 
-.pfooter {
-            text-align: center;
-            margin: 1em
+.linkfooter {
+        text-decoration:none;
 }
 
 /* Iconos */
+
+/* Nav  */
+
+.fa-home, .fa-user, .fa-at, .fa-user-plus, .fa-map-marker-alt {
+        color: white
+        ;
+}
+
+/* Foooter */
 .fa-facebook-square{
-                        color: #475a95;
-                        background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
-                        background-size: 55%;
-                        background-position: 70% 0;
-                        background-repeat: no-repeat;
+        color: #475a95;
+        background-image: radial-gradient(circle, white 63%, black 37%)
 }
 
 .fa-twitter-square {
-                        color: #00acee;
-                        background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
-                        background-size: 70%;
-                        background-position: 70% 0;
-                        background-repeat: no-repeat;
+        color: #00acee;
+        background-image: radial-gradient(circle, white 63%, black 37%)
 }
 
 .fa-instagram {
-                background: #d6249f;
-                background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
                 
                 
 }
 .fa-pinterest-square {
-                        color: red;
-                        background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
-                        background-size: 70%;
-                        background-position: 70% 0;
-                        background-repeat: no-repeat;
+        color: red;
+        background: white;
+        height: 0.90em;
+        background-position: bottom;
+        background-image: radial-gradient(circle, white 65%, black 35%)
+
 }
 .fa-linkedin {
-                color: blue;
-                background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
-                background-size: 70%;
-                background-position: 50% -3px;
-                background-repeat: no-repeat;
+        color: blue;
+        background-image: radial-gradient(circle, white 63%, black 37%)
 }
 .fa-youtube {
-                color: red;
-                background-image: linear-gradient( to bottom, transparent 20%, white 20%, white 93%, transparent 93% );
-                background-size: 70%;
-                background-position: 50% -3px;
-                background-repeat: no-repeat;
+        color: red;
+        background: white;
+        background-size: 10px 10px;
+        height: 10 px;
 }
