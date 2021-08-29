@@ -88,6 +88,12 @@ footer {
 .fa-youtube {
         color: red;
         background: white;
-        background-size: 10px 10px;
-        height: 10 px;
+        background-size: 6px 6px;
+        height: 6 px;
+}
+
+.bi-facebook {
+        color: #475a95;
+        background-image: radial-gradient(circle, white 63%, black 37%)   
+             
 }
