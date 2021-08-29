@@ -35,17 +35,14 @@ footer {
 /* Selector Class */
 
 /* Etiquetas */
-.linkindex {
+
+.linkindex, .linkreceta {
         color: white;
         background-color: #838383; 
         margin: 0.5em;
         padding: 0.5em;
         border-radius: 0.3em;
-        /*text-decoration: none;*/           
-}
-
-.linkfooter {
-        text-decoration:none;
+        text-decoration: none;
 }
 
 /* Iconos */
