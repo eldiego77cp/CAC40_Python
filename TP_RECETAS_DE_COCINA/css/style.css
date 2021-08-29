@@ -5,17 +5,22 @@ header {
         /* header style */ 
         background-color: black;
         height: auto;
+        
         /* header text */
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         text-align: center;
 }
+
 nav {
-        padding: 1em 1em 1em 0em;
+        margin-left: 0.5em;
+        padding-top: 0.5em;
+        /*padding: 1em 1em 1em 0em;*/
 }
 
 main {
-        padding: 1em 1em 1em 0em;
+        margin: 0.5em;
+        /*padding: 1em 1em 1em 0em;*/
 }
 
 footer {
@@ -23,25 +28,37 @@ footer {
         background-color: black;
         height: auto;
         border-style: solid;
-        margin: 0.25em;
+        margin: 0.5em;
         padding: 0.5em;
         /* footer text */
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         text-align: center;
-        
 }
 
 /* Selector Class */
 
 /* Etiquetas */
 
-.linkindex, .linkreceta {
+.linkindex {
         color: white;
         background-color: #838383; 
+        /*margin: 0.5em;*/
+        padding: 0.5em;
+        border-radius: 0.3em;
+        text-decoration: none;
+}
+
+.linkreceta {
         margin: 0.5em;
         padding: 0.5em;
         border-radius: 0.3em;
+        color: white;
+        background-color: #838383;
+        text-decoration: none;
+}
+
+.linkfooter {
         text-decoration: none;
 }
 
@@ -57,12 +74,16 @@ footer {
 /* Foooter */
 .fa-facebook-square{
         color: #475a95;
-        background-image: radial-gradient(circle, white 63%, black 37%)
+        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        line-height: 0.87em;
+        border-radius: 15%;
 }
 
 .fa-twitter-square {
         color: #00acee;
-        background-image: radial-gradient(circle, white 63%, black 37%)
+        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        line-height: 0.87em;
+        border-radius: 15%;
 }
 
 .fa-instagram {
@@ -70,30 +91,25 @@ footer {
         background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-                
-                
 }
 .fa-pinterest-square {
         color: red;
-        background: white;
-        height: 0.90em;
-        background-position: bottom;
-        background-image: radial-gradient(circle, white 65%, black 35%)
+        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        line-height: 0.87em;
+        border-radius: 15%;
 
 }
 .fa-linkedin {
         color: blue;
-        background-image: radial-gradient(circle, white 63%, black 37%)
+        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        line-height: 0.87em;
+        border-radius: 15%;
 }
 .fa-youtube {
         color: red;
-        background: white;
-        background-size: 6px 6px;
-        height: 6 px;
-}
+        background-image: linear-gradient(to right, black, black, white, white, white, black, black);
+        line-height: 0.3em;
 
-.bi-facebook {
-        color: #475a95;
-        background-image: radial-gradient(circle, white 63%, black 37%)   
-             
-}
+        }
+
+
