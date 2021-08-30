@@ -1,0 +1,25 @@
+body {
+    background-color: black;
+}
+
+main {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.t1_header_horizontal {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    
+}
+.button_header {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    background-color: white;
+    border-radius: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    
+}
