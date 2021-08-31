@@ -23,3 +23,8 @@ main {
     padding-bottom: 0.5em;
     
 }
+.logo {
+    background-color: black;
+    height: 24px;
+    width: 48px;
+}
