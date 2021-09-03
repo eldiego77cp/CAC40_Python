@@ -1,7 +1,9 @@
 /* Esto es un comentario */
+/* Por la especificidad se deben utilizar los IDs y Clases/Pseudoclases. Los del tipo !important deben ser limitados y excepcionales */
 
-/* Selector Type */
-header {
+/* Selector Clase/Pseudoclase */
+
+.header {
         /* header style */ 
         background-color: black;
         height: auto;
@@ -12,18 +14,18 @@ header {
         text-align: center;
 }
 
-nav {
+.nav {
         margin-left: 0.5em;
         padding-top: 0.5em;
-        /*padding: 1em 1em 1em 0em;*/
+        display: flex;
 }
 
-main {
+.main {
         margin: 0.5em;
         /*padding: 1em 1em 1em 0em;*/
 }
 
-footer {
+.footer {
         /* footer style */ 
         background-color: black;
         height: auto;
@@ -39,16 +41,13 @@ footer {
         text-align: center;
 }
 
-/* Selector Class */
-
-/* Etiquetas */
-
 .linkindex {
         color: white;
         background-color: #838383; 
         padding: 0.5em;
         border-radius: 0.3em;
         text-decoration: none;
+        position: relative right;
 }
 
 .linkreceta {
