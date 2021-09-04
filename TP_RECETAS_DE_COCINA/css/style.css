@@ -108,3 +108,11 @@
         background-image: linear-gradient(to right, black, black, white, white, white, black, black);
         line-height: 0.3em;        
 }
+/* Imágenes */
+.clientes{
+        display: flexbox;
+        background-color: black;
+        border: 1px solid black;
+        width: 15%;
+        height: 15%;
+}
