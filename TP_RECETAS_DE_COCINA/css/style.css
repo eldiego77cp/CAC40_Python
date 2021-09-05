@@ -4,56 +4,30 @@
 /* Selector Clase/Pseudoclase */
 
 .header {
-        /* header style */ 
+        color: white;
         background-color: black;
-        height: auto;
-        
-        /* header text */
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
+}
+
+.header h1 {
+        font-family: 'Lobster', cursive;
         text-align: center;
+        padding: 1em;
 }
 
-.nav {
-        margin-left: 0.5em;
-        padding-top: 0.5em;
-        display: flex;
-}
-
-.main {
-        margin: 0.5em;
-        /*padding: 1em 1em 1em 0em;*/
-}
-
-.footer {
-        /* footer style */ 
-        background-color: black;
-        height: auto;
-        border-style: solid;
-        position: relative;
-        bottom: 5%;
-        
-        /* footer text */
+.linknav {
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-}
-
-.linkindex {
-        color: white;
-        background-color: #838383; 
+        background-color: #838383;
+        margin-right: 0.5em; 
         padding: 0.5em;
         border-radius: 0.3em;
         text-decoration: none;
-        position: relative right;
 }
 
 .linkreceta {
-        margin: 0.5em;
-        padding: 0.5em;
-        border-radius: 0.3em;
         color: white;
         background-color: #838383;
+        padding: 0.5em;
+        border-radius: 0.3em;
         text-decoration: none;
 }
 
@@ -74,8 +48,8 @@
 .fa-facebook-square{
         color: #475a95;
         background-image: linear-gradient(to right, black, white, white, white, white, white, black);
-        line-height: 0.87em;
         border-radius: 15%;
+        line-height: 0.87em;
 }
 .fa-twitter-square {
         color: #00acee;
@@ -104,9 +78,10 @@
 .fa-youtube {
         color: red;
         background-image: linear-gradient(to right, black, black, white, white, white, black, black);
-        line-height: 0.3em;        
+        line-height: 0.3em !important;        
 }
 /* Imágenes */
+
 .clientes{
         display: flexbox;
         background-color: black;
