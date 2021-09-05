@@ -3,6 +3,7 @@
 
 /* Selector Clase/Pseudoclase */
 
+/* Componentes del Header */
 .header {
         color: white;
         background-color: black;
@@ -11,24 +12,80 @@
 .header h1 {
         font-family: 'Lobster', cursive;
         text-align: center;
+        text-decoration: underline;
         padding: 1em;
 }
 
 .linknav {
+        display: block;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
         color: white;
         background-color: #838383;
-        margin-right: 0.5em; 
         padding: 0.5em;
         border-radius: 0.3em;
         text-decoration: none;
 }
 
+/* Componentes del Main */
+.main h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        padding: 1em;
+}
+
+.main > h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        text-decoration: underline;
+        padding: 1em;
+}
+
 .linkreceta {
+        display: block;
+        width: max-content;
         color: white;
         background-color: #838383;
         padding: 0.5em;
         border-radius: 0.3em;
+        margin-top: .5em;
+        margin-left: 1em;
         text-decoration: none;
+}
+
+.aside {
+        width: 176px;
+        position: absolute;
+        top: 25%;
+        right: 0;
+        color: white;
+        text-align: center;
+        background-color:red;
+}
+
+.linkaside {
+        display: block;
+        margin: .5em;
+        width: 160px;
+        height: 120px;
+        
+        
+}
+
+/* Componentes del Footer */
+.footer {
+        color: white;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+}
+
+.footer h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding: 1em;
 }
 
 .linkfooter {
