@@ -1,0 +1,177 @@
+/* Esto es un comentario */
+/* Por la especificidad se deben utilizar los IDs y Clases/Pseudoclases. Los del tipo !important deben ser limitados y excepcionales */
+
+/* Selector Clase/Pseudoclase */
+
+/* Componentes del Header */
+.header {
+        color: white;
+        background-color: black;
+}
+
+.header h1 {
+        font-family: 'Lobster', cursive;
+        text-align: center;
+        text-decoration: underline;
+        padding: 1em;
+}
+
+.linknav {
+        display: block;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        color: white;
+        background-color: #838383;
+        padding: 0.5em;
+        border-radius: 0.3em;
+        text-decoration: none;
+}
+
+/* Componentes del Main */
+.main {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+}
+
+.main h2 { 
+        /* Nombre en pantalla: Recetas de cocina */
+        font-weight: bold;
+        text-align: center;
+}
+
+.main h3 {
+        /* Nombre en pantalla: Guiso de Lentejas */
+        text-align: center;
+        padding: 0.5em;
+        text-decoration: underline;
+ 
+}
+
+.index_main_div1 {
+        width: 50vw;
+        max-height: 50vh;
+        border: 3px solid black;
+        padding: 1em;
+
+}
+
+.index_main_div1 img {
+        float: right;
+        height: 60%;
+        width: 60%;
+        padding-left: 1em;
+        
+}
+
+.index_main_div1 p {
+        text-align: justify;
+        
+}
+
+.linkreceta {
+        display: block;
+        width: max-content;
+        color: white;
+        background-color: #838383;
+        border-radius: 0.3em;
+        padding: 0.5em;
+        text-decoration: none;
+}
+
+.aside {
+        width: 176px;
+        margin: 0.5;
+        position: absolute;
+        top: 15vh;
+        right: 0;
+        color: black;
+        text-align: center;
+        background-color: peachpuff;
+}
+
+.linkaside {
+        display: block;
+        margin: .5em;
+        height: 80%;
+        width: 80%;
+        
+        
+        
+}
+
+/* Componentes del Footer */
+.footer {
+        color: white;
+        background-color: black;
+        border-color: red;
+        margin-top: 1em;
+        width: 100%;
+        text-align: center;
+}
+
+.footer h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+}
+
+.linkfooter {
+        display: inline-block;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        text-decoration: none;
+}
+
+/* Iconos */
+
+/* Nav  */
+
+.fa-home, .fa-user, .fa-at, .fa-user-plus, .fa-map-marker-alt {
+        color: white
+        ;
+}
+
+/* Foooter */
+.fa-facebook-square{
+        color: #475a95;
+        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        border-radius: 15%;
+        line-height: 0.87em;
+}
+.fa-twitter-square {
+        color: #00acee;
+        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        line-height: 0.87em;
+        border-radius: 15%;
+}
+.fa-instagram {
+        background: #d6249f;
+        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.fa-pinterest-square {
+        color: red;
+        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        line-height: 0.87em;
+        border-radius: 15%;
+}
+.fa-linkedin {
+        color: blue;
+        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        line-height: 0.87em;
+        border-radius: 15%;
+}
+.fa-youtube {
+        color: red;
+        background-image: linear-gradient(to right, black, black, white, white, white, black, black);
+        line-height: 0.3em !important;        
+}
+/* Imágenes */
+
+.clientes{
+        display: flexbox;
+        background-color: black;
+        border: 1px solid black;
+        width: 15%;
+        height: 15%;
+}
