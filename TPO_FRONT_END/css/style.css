@@ -1,9 +1,24 @@
 /* Esto es un comentario */
 /* Por la especificidad se deben utilizar los IDs y Clases/Pseudoclases. Los del tipo !important deben ser limitados y excepcionales */
 
-/* Selector Clase/Pseudoclase */
-
 /* Componentes del Header */
+.index_header {
+        background-color: #e5e5e5;
+        background-image: url(../images/bg\ image.png);
+        background-repeat: no-repeat;
+        background-size: auto;
+        width: 100vw;
+        max-height: 5vh ;
+}
+.index_header_logo img {
+        background-color: white;
+        max-width: 5vw;
+        max-height: 5vh;
+}
+
+
+
+
 .header {
         color: white;
         background-color: black;
