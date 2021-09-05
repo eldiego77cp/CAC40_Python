@@ -80,15 +80,18 @@
         position: absolute;
         bottom: 0;
         width: 100%;
+        text-align: center;
 }
 
 .footer h4 {
         font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
         padding: 1em;
 }
 
 .linkfooter {
+        display: inline-block;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
         text-decoration: none;
 }
 
