@@ -2,123 +2,57 @@
 /* Por la especificidad se deben utilizar los IDs y Clases/Pseudoclases. Los del tipo !important deben ser limitados y excepcionales */
 
 /* Componentes del Header */
-.index_header {
-        background-color: #e5e5e5;
-        background-image: url(../images/bg\ image.png);
-        background-repeat: no-repeat;
-        background-size: auto;
+ .index_header_div {
+        position: relative; 
+        background-image: linear-gradient( to top, #cccccc, #d4d4d4, #dddddd, #e5e5e5, #eeeeee);
         width: 100vw;
-        max-height: 5vh ;
+        height: 7vh;
 }
-.index_header_logo img {
-        background-color: white;
-        max-width: 5vw;
-        max-height: 5vh;
+.index_header_div_img, .index_header_div_nav {
+        display: inline-block;
+}
+.index_header_div_img {
+        background-image: transparent;
+        width: 4vw;
+        height: 4vh;
+        margin-left: 1vw;
+}
+.index_header_div_nav {
+        color: #999999;
+        margin-left: 45vw;
+        margin-top: 3vh;
+}
+.index_header_div_nav_a:active, .index_header_div_nav_a:visited, .index_header_div_nav_a:link {
+        font-family: sans-serif;
+        padding: 7px;
+        color: #999999;
 }
 
-
-
-
-.header {
-        color: white;
-        background-color: black;
-}
-
-.header h1 {
-        font-family: 'Lobster', cursive;
-        text-align: center;
-        text-decoration: underline;
-        padding: 1em;
-}
-
-.linknav {
-        display: block;
-        margin-top: 0.5em;
-        margin-left: 0.5em;
-        color: white;
-        background-color: #838383;
-        padding: 0.5em;
-        border-radius: 0.3em;
-        text-decoration: none;
+.index_header_div_nav_a:hover {
+        background-color: #ffffff;
+        color: #db284b;
+        border-radius: 10px;
 }
 
 /* Componentes del Main */
-.main {
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 1em;
-}
-
-.main h2 { 
-        /* Nombre en pantalla: Recetas de cocina */
-        font-weight: bold;
-        text-align: center;
-}
-
-.main h3 {
-        /* Nombre en pantalla: Guiso de Lentejas */
-        text-align: center;
-        padding: 0.5em;
-        text-decoration: underline;
- 
-}
-
-.index_main_div1 {
-        width: 50vw;
-        max-height: 50vh;
-        border: 3px solid black;
-        padding: 1em;
-
-}
-
-.index_main_div1 img {
-        float: right;
-        height: 60%;
-        width: 60%;
-        padding-left: 1em;
-        
-}
-
-.index_main_div1 p {
-        text-align: justify;
-        
-}
-
-.linkreceta {
-        display: block;
-        width: max-content;
-        color: white;
-        background-color: #838383;
-        border-radius: 0.3em;
-        padding: 0.5em;
-        text-decoration: none;
-}
-
-.aside {
-        width: 176px;
-        margin: 0.5;
-        position: absolute;
-        top: 15vh;
-        right: 0;
+.index_main_h {
         color: black;
         text-align: center;
-        background-color: peachpuff;
 }
-
-.linkaside {
-        display: block;
-        margin: .5em;
-        height: 80%;
-        width: 80%;
-        
-        
-        
+.index_main_div {
+        background-color: #7897ab;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        margin: 0;
+}
+.index_main_h {
+        font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Componentes del Footer */
 .footer {
-        color: white;
-        background-color: black;
-        border-color: red;
+        color: #999999;
+        background: linear-gradient(to right, #e6e6e6, #e6e6e6, #ffffff, #ffffff, #ffffff, #e6e6e6, #e6e6e6 );
         margin-top: 1em;
         width: 100%;
         text-align: center;
@@ -140,21 +74,22 @@
 
 /* Nav  */
 
-.fa-home, .fa-user, .fa-at, .fa-user-plus, .fa-map-marker-alt {
-        color: white
+.fa-home, .fa-user, .fa-at, .fa-user-plus, .fa-map-marker-alt, .fa-users {
+        color: #999999
+
         ;
 }
 
 /* Foooter */
 .fa-facebook-square{
         color: #475a95;
-        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        background-image: linear-gradient(to right, #e6e6e6, white, white, white, white, white, #e6e6e6);
         border-radius: 15%;
         line-height: 0.87em;
 }
 .fa-twitter-square {
         color: #00acee;
-        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        background-image: linear-gradient(to right, #e6e6e6, white, white, white, white, white, #e6e6e6);
         line-height: 0.87em;
         border-radius: 15%;
 }
@@ -166,19 +101,19 @@
 }
 .fa-pinterest-square {
         color: red;
-        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        background-image: linear-gradient(to right, #e6e6e6, white, white, white, white, white, #e6e6e6);
         line-height: 0.87em;
         border-radius: 15%;
 }
 .fa-linkedin {
         color: blue;
-        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        background-image: linear-gradient(to right, #e6e6e6, white, white, white, white, white, #e6e6e6);
         line-height: 0.87em;
         border-radius: 15%;
 }
 .fa-youtube {
         color: red;
-        background-image: linear-gradient(to right, black, black, white, white, white, black, black);
+        background-image: linear-gradient(to right, #e6e6e6, #e6e6e6, white, white, white, #e6e6e6, #e6e6e6);
         line-height: 0.3em !important;        
 }
 /* Imágenes */
