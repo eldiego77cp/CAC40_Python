@@ -1,86 +1,63 @@
 /* Esto es un comentario */
 /* Por la especificidad se deben utilizar los IDs y Clases/Pseudoclases. Los del tipo !important deben ser limitados y excepcionales */
 
-/* Componentes del Header */
- .index_header_div {
+/* ---------------------------------- Componentes para todas las páginas del TPO ----------------------------------*/
+/* -------------------------------------------- Componentes del Header --------------------------------------------*/ 
+ .header_div {
         position: relative; 
         background-image: linear-gradient( to top, #cccccc, #d4d4d4, #dddddd, #e5e5e5, #eeeeee);
         width: 100vw;
         height: 7vh;
 }
-.index_header_div_img, .index_header_div_nav {
+.header_div_img, .header_div_nav {
         display: inline-block;
 }
-.index_header_div_img {
+.header_div_img {
         background-image: transparent;
         width: 4vw;
         height: 4vh;
         margin-left: 1vw;
 }
-.index_header_div_nav {
+.header_div_nav {
         color: #999999;
         margin-left: 45vw;
         margin-top: 3vh;
 }
-.index_header_div_nav_a:active, .index_header_div_nav_a:visited, .index_header_div_nav_a:link {
+.header_div_nav_a:active, .header_div_nav_a:visited, .header_div_nav_a:link {
         font-family: sans-serif;
         padding: 7px;
         color: #999999;
 }
 
-.index_header_div_nav_a:hover {
+.header_div_nav_a:hover {
         background-color: #ffffff;
         color: #db284b;
         border-radius: 10px;
 }
 
-/* Componentes del Main */
-.index_main_h {
-        color: black;
-        text-align: center;
-}
-.index_main_div {
-        background-color: #7897ab;
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        margin: 0;
-}
-.index_main_h {
-        font-family: Arial, Helvetica, sans-serif;
+.fa-home, .fa-user, .fa-at, .fa-user-plus, .fa-map-marker-alt, .fa-users {
+        color: #999999; /* Iconos del nav */
 }
 
-/* Componentes del Footer */
-.footer {
+/* -------------------------------------------- Componentes del Footer --------------------------------------------*/ 
+.footer_div {
         color: #999999;
         background: linear-gradient(to right, #e6e6e6, #e6e6e6, #ffffff, #ffffff, #ffffff, #e6e6e6, #e6e6e6 );
         margin-top: 1em;
         width: 100%;
         text-align: center;
 }
-
 .footer h4 {
         font-family: Arial, Helvetica, sans-serif;
         padding: 1em;
 }
-
 .linkfooter {
         display: inline-block;
         margin-top: 0.5em;
         margin-left: 0.5em;
         text-decoration: none;
 }
-
-/* Iconos */
-
-/* Nav  */
-
-.fa-home, .fa-user, .fa-at, .fa-user-plus, .fa-map-marker-alt, .fa-users {
-        color: #999999
-
-        ;
-}
-
-/* Foooter */
+/* -------------------------------------------- Redes Sociales --------------------------------------------*/ 
 .fa-facebook-square{
         color: #475a95;
         background-image: linear-gradient(to right, #e6e6e6, white, white, white, white, white, #e6e6e6);
@@ -116,6 +93,37 @@
         background-image: linear-gradient(to right, #e6e6e6, #e6e6e6, white, white, white, #e6e6e6, #e6e6e6);
         line-height: 0.3em !important;        
 }
+
+/* ---------------------------------- Componentes para cada una las páginas del TPO ----------------------------------*/
+/* ---------------------------------------------- Componentes del Main -----------------------------------------------*/
+/* ---------------------------------------------------- index.html ---------------------------------------------------*/
+.index_main_h {
+        color: black;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: .5em;
+}
+.index_main_div {
+        background-color: #7897ab;
+        text-align: center;
+        font-family: 'Oswald', sans-serif;
+        margin: 0;
+        padding: .5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Imágenes */
 
 .clientes{
@@ -125,3 +133,23 @@
         width: 15%;
         height: 15%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Componentes del Main */
+
+
