@@ -3,33 +3,47 @@
 
 /* ---------------------------------- Componentes para todas las páginas del TPO ----------------------------------*/
 /* -------------------------------------------- Componentes del Header --------------------------------------------*/ 
- .header_div {
-        position: relative; 
+.header_nav {
+        display:flex;
+        position: fixed; 
         background-image: linear-gradient( to top, #cccccc, #d4d4d4, #dddddd, #e5e5e5, #eeeeee);
         width: 100vw;
-        height: 7vh;
+        height: 100px;
 }
-.header_div_img, .header_div_nav {
+.header_nav_div1 {
+        width: 60px;
+        height: 60px;
+        margin: 20px;
+}
+.header_nav_div1_img {
+        width: 60px;
+        height: auto;
+}
+.header_nav_div2 {
+        height: 80px;
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left:0;
+        margin: auto;
+}
+.header_nav_div2_a {
         display: inline-block;
-}
-.header_div_img {
-        background-image: transparent;
-        width: 4vw;
-        height: 4vh;
-        margin-left: 1vw;
-}
-.header_div_nav {
         color: #999999;
-        margin-left: 45vw;
-        margin-top: 3vh;
-}
-.header_div_nav_a:active, .header_div_nav_a:visited, .header_div_nav_a:link {
+        padding: 10px;
+        margin: 15px 15px;
+} 
+.header_nav_div2_a:active, .header_nav_div2_a:visited, .header_nav_div2_a:link {
         font-family: sans-serif;
         padding: 7px;
         color: #999999;
+        text-decoration: none;
 }
-
-.header_div_nav_a:hover {
+.header_nav_div2_a {
+        transition: all .05s;
+}
+.header_nav_div2_a:hover {
         background-color: #ffffff;
         color: #db284b;
         border-radius: 10px;
@@ -97,11 +111,8 @@
 /* ---------------------------------- Componentes para cada una las páginas del TPO ----------------------------------*/
 /* ---------------------------------------------- Componentes del Main -----------------------------------------------*/
 /* ---------------------------------------------------- index.html ---------------------------------------------------*/
-.index_main_h {
-        color: black;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        padding: .5em;
+.index_main {
+        padding-top: 100px;
 }
 .index_main_div {
         background-color: #7897ab;
@@ -110,10 +121,20 @@
         margin: 0;
         padding: .5em;
 }
+.index_main_h {
+        background-color: #ffffff;;
+        color: black;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: .5em;
+        width: 100vw;
+}
 
 
-
-
+.header_nav_conteiner {
+        display: block;
+        height: 70px;
+}
 
 
 
