@@ -131,15 +131,15 @@
 }
 
 /* Foooter */
-.fa-facebook-square{
+#fb{
         color: #475a95;
         background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        line-height: 0.87em ;
         border-radius: 15%;
-        line-height: 0.87em;
 }
-.fa-twitter-square {
+#tw {
         color: #00acee;
-        background-image: linear-gradient(to right, black, white, white, white, white, white, black);
+        background-image: linear-gradient(to top, black, white, white, white, white, white, black);
         line-height: 0.87em;
         border-radius: 15%;
 }
@@ -149,13 +149,13 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
-.fa-pinterest-square {
+#pt {
         color: red;
         background-image: linear-gradient(to right, black, white, white, white, white, white, black);
         line-height: 0.87em;
         border-radius: 15%;
 }
-.fa-linkedin {
+#li {
         color: blue;
         background-image: linear-gradient(to right, black, white, white, white, white, white, black);
         line-height: 0.87em;
