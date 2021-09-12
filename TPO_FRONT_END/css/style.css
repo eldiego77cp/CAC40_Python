@@ -108,12 +108,17 @@
         line-height: 0.3em !important;        
 }
 
-/* ---------------------------------- Componentes para cada una las páginas del TPO ----------------------------------*/
-/* ---------------------------------------------- Componentes del Main -----------------------------------------------*/
-/* ---------------------------------------------------- index.html ---------------------------------------------------*/
-.index_main {
+/* ----------------------------------- Componentes para cada una las páginas del TPO ------------------------------------*/
+/* ----------------------------------------------- Componentes del Main -------------------------------------------------*/
+/* ------------------------------------------ Comunes a todas las páginas -----------------------------------------------*/
+
+.index_main, .oficinas_main, .nuestras_marcas_main, .contacto_mail, .registrarse_main {
         padding-top: 100px;
 }
+
+
+/* ----------------------------------------------------- index.html -----------------------------------------------------*/
+
 .index_main_div_conteiner1 {
         background-color: #7897ab;
         text-align: center;
@@ -227,6 +232,38 @@
 }
 
 
+/* ---------------------------------------------------- nuestras_marcas.html ---------------------------------------------------*/
+
+.nuestras_marcass_main_div_container {
+        display: grid;
+        width: 100vw;
+        height: 830px;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-area: 
+                '1 2 3 4'
+                '5 6 7 8'
+                '9 10 11 12';
+        gap: 10px;
+        padding-left: 50px;
+        justify-content: center;
+
+}
+
+.nuestras_marcas_main_div_item {
+        height: 200px;
+        ;
+}
+
+/* ---------------------------------------------------- nuestros_clientes.html ---------------------------------------------------*/
+
+
+
+
+/* ---------------------------------------------------- contacto.html ---------------------------------------------------*/
+
+
+/* ---------------------------------------------------- registrarse.html ---------------------------------------------------*/
 
 
 
