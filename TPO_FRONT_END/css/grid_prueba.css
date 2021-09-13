@@ -1,0 +1,102 @@
+/* Esto es un comentario */
+/* Por la especificidad se deben utilizar los IDs y Clases/Pseudoclases. Los del tipo !important deben ser limitados y excepcionales */
+
+/* ---------------------------------- Componentes para todas las páginas del TPO ----------------------------------*/
+/* -------------------------------------------- Componentes del Header --------------------------------------------*/ 
+
+
+/* -------------------------------------------- Componentes del Footer --------------------------------------------*/ 
+
+/* -------------------------------------------- Redes Sociales --------------------------------------------*/ 
+
+
+/* ----------------------------------- Componentes para cada una las páginas del TPO ------------------------------------*/
+/* ----------------------------------------------- Componentes del Main -------------------------------------------------*/
+/* ------------------------------------------ Comunes a todas las páginas -----------------------------------------------*/
+
+/* ----------------------------------------------------- index.html -----------------------------------------------------*/
+
+
+/* ---------------------------------------------------- nuestras_marcas.html ---------------------------------------------------*/
+
+
+/* ---------------------------------------------------- nuestras_marcas2.html ---------------------------------------------------*/
+
+
+/* Definición del grid */
+
+.grid_container {
+        background-color: lightgray;
+        border: 5px solid black;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 
+                "header         header          header"
+                "main_1         main_2          main_3"
+                "main_4         main_5          main_6"
+                "main_7         main_8          main_9"
+                "footer         footer          footer";
+        gap: 10px;
+}
+
+
+/* Definición de ancho y alto de los items en filas y columnas */
+
+.item_header {
+        grid-area: header;
+        background-color: lightgoldenrodyellow;
+
+}
+.item_main_1 {
+        grid-area: main_1;
+        background-color: orange;
+}
+.item_main_2 {
+        grid-area: main_2;
+        background-color: red;
+}
+.item_main_3 {
+        grid-area: main_3;
+        background-color: green;
+}
+.item_main_4 {
+        grid-area: main_4;
+        background-color: orange;
+}
+.item_main_5 {
+        grid-area: main_5;
+        background-color: red;
+}
+.item_main_6 {
+        grid-area: main_6;
+        background-color: green;
+}
+.item_main_7 {
+        grid-area: main_7;
+        background-color: orange;
+}
+.item_main_8 {
+        grid-area: main_8;
+        background-color: red;
+}
+.item_main_9 {
+        grid-area: main_9;
+        background-color: green;
+}
+
+.item_footer {
+        background-color: lightskyblue;
+        grid-area: footer;
+
+}
+
+/* ---------------------------------------------------- nuestros_clientes.html ---------------------------------------------------*/
+
+/* ---------------------------------------------------- contacto.html ---------------------------------------------------*/
+
+/* ---------------------------------------------------- registrarse.html ---------------------------------------------------*/
+
+/* Componentes del Main */
+
+

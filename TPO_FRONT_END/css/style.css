@@ -231,62 +231,7 @@
         
 }
 
-
 /* ---------------------------------------------------- nuestras_marcas.html ---------------------------------------------------*/
-
-.nuestras_marcass_main_div_container {
-        display: grid;
-        width: 100vw;
-        height: 830px;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        grid-area: 
-                '1 2 3 4'
-                '5 6 7 8'
-                '9 10 11 12';
-        gap: 10px;
-        padding-left: 50px;
-        justify-content: center;
-
-}
-
-.nuestras_marcas_main_div_item {
-        height: 200px;
-        ;
-}
-
-/* ---------------------------------------------------- nuestros_clientes.html ---------------------------------------------------*/
-
-
-
-
-/* ---------------------------------------------------- contacto.html ---------------------------------------------------*/
-
-
-/* ---------------------------------------------------- registrarse.html ---------------------------------------------------*/
-
-
-
-/* Imágenes */
-
-.clientes{
-        display: flexbox;
-        background-color: black;
-        border: 1px solid black;
-        width: 15%;
-        height: 15%;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 
 
