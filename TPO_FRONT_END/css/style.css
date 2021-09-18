@@ -351,3 +351,31 @@ div img {
 .nuestras_marcas_grid_item_aside2 {
         grid-area: aside2;
 }
+
+/* ------------------------------------------------------ registrarse.html -------------------------------------------------------*/
+.registrarse_grid_container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 70px 1fr 100px;
+        grid-template-areas: 
+                "header_logo    header_nav      header_nav      header_nav      header_nav      header_nav"
+                "form           form            form            form            form            form"
+                "footer         footer          footer          footer          footer          footer";
+}
+.registrarse_grid_item_form {
+        grid-area: form;
+}
+.form-check-input:checked {
+        background-color: #2b78c2 !important;
+        border-color: #2b78c2 !important;
+      }
+.btn-colcss {
+        color: #fff !important;
+        background-color: #2b78c2 !important;
+        border-color: #2b78c2 !important;
+}
+.btn-colcss:hover {
+        color: #fff !important;
+        background-color: #0d6efd !important;
+        border-color: #0d6efd !important;
+}

@@ -32,169 +32,96 @@
 
   <body>
 
-    <header class="header">
+    <div class="registrarse_grid_container">
+
       <a id="top"></a>
 
-      <nav class="nav">
-        <table>
-          <th>
-            <a class="linknav" href="../index.html" ><i class="fas fa-home"></i> Home</a>
-          </th>
-          <th>
-            <a class="linknav" href="acerca_de.html" ><i class="fas fa-user"></i> A cerca de</a
-              ></th>
-          <th>
-            <a class="linknav" href="contacto.html" ><i class="fas fa-at"></i> Contacto</a>
-          </th>
-          <th>
-            <a class="linknav" href="#top" ><i class="fas fa-user-plus"></i> Registrarse</a>
-          </th>
-          <th>
-            <a class="linknav" href="sucursales.html" ><i class="fas fa-map-marker-alt"></i> Sucursales</a>
-          </th>
-          <th>
-            <a class="linknav" href="nuestros_clientes.html" ><i class="fas fa-users"></i> Nuestros Clientes</a>
-          </th>
-        </table>
-      </nav>
-
-      <h1 class="animate__animated animate__flip">La Cocina De La Nona</h1>
-
-    </header>
-
-    <main class="main">
-
-      <h2>Registrarse</h2><br>
+      <div class="grid_item_header_logo">
+            <img class="flex_item_nav_logo" src="../logo/car parking.png" alt="logo">
+      </div>
       
-      <form action="datos_formulario.html" id="form1" method="GET" target="_blank">
-        
-        <label for="nombre">Nombre:<b style="color: red">*</b></label>
-        <input type="text" name="nombre" id="nombre" size="30" maxlength="100" placeholder="Indique su nombre aquí" required>
-        <label for="apellido">Apellido:<b style="color: red">*</b></label>
-        <input type="text" name="apellido" id="apellido" size="30" maxlength="100" placeholder="Indique su apellido aquí" required>
-        <br>
-        <label for="direccion">Dirección:</label><br>
-        <label for="calle">Calle:<b style="color: red">*</b></label>
-        <input type="text" name="calle" id="calle" size="30" maxlength="100" placeholder="Indique su calle aquí" required>
-        <label for="numero">Número:<b style="color: red">*</b></label>
-        <input type="number" name="numero" id="numero" size="30" maxlength="4" placeholder="Indique su número aquí" required>
-        <label for="ciudad">Ciudad:<b style="color: red">*</b></label>
-        <select name="ciudad" id="ciudad">
-          <option value="901">Ciudad de Buenos Aires</option>
-          <option value="902">Provincia de Buenos Aires</option>
-          <option value="903">Catamarca</option>
-          <option value="904">Córdoba</option>
-          <option value="905">Corrientes</option>
-          <option value="906">Chaco</option>
-          <option value="907">Chubut</option>
-          <option value="908">Entre Ríos</option>
-          <option value="909">Formosa</option>
-          <option value="910">Jujuy</option>
-          <option value="911">La Pampa</option>
-          <option value="912">La Rioja</option>
-          <option value="913">Mendoza</option>
-          <option value="914">Misiones</option>
-          <option value="915">Neuquén</option>
-          <option value="916">Rí­o Negro</option>
-          <option value="917">Salta</option>
-          <option value="918">San Juan</option>
-          <option value="919">San Luis</option>
-          <option value="920">Santa Cruz</option>
-          <option value="921">Santa Fe</option>
-          <option value="922">Santiago del Estero</option>
-          <option value="923">Tierra del Fuego</option>
-          <option value="924">ucumán</option>
-        </select>
-        <label for="cp">Código Postal:<b style="color: red">*</b></label>
-        <input type="text" name="cp" id="cp" size="30" maxlength="8" placeholder="Indique su CP aquí" required>
-        <br>
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" name="telefono" id="telefono" size="30" placeholder= "Indique su teléfono aquí">
-        <label for="fecha_nacimiento">Fecha de Nacimiento:<b style="color: red">*</b></label>
-        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" size="30" required>
-        <label for="mail">Mail:<b style="color: red">*</b></label>
-        <input type="email" name="mail" id="mail" size="30" placeholder="Indique su email aquí" required>
-        <label for="clave">Clave:<b style="color: red">*</b></label>
-        <input type="password" name="clave" id="clave" size="30" maxlength="8" placeholder="Indique su clave aquí (Max 8 chars.)" required>
-        <label for="linktp">Link del TP3:</label>
-        <input type="url">
-        <br>
-        <label for="sexo">Género:</label>
-        <input type="radio" name="sexo" id="hombre" value="Hombre" checked>Hombre
-        <input type="radio" name="sexo" id="mujer" value="Mujer">Mujer
-        <input type="radio" name="sexo" id="x" value="X">No Binario
-        <br>
-        <label for="conocimientos">Conocimientos previos:</label>
-        <input type="checkbox" name="html" id="html">HTML
-        <input type="checkbox" name="css" id="css">CSS
-        <input type="checkbox" name="bootstrap" id="bootstrap">Bootstrap
-        <input type="checkbox" name="js" id="js">Javascript
-        <input type="checkbox" name="ts" id="ts">Typescript
-        <input type="checkbox" name="angular" id="angular">Angular
-        <input type="checkbox" name="bd" id="bd">Base de Datos
-        <input type="checkbox" name="py" id="py">Python
-        <input type="checkbox" name="django" id="django">Django
-        <br>
-        <label for="estudios">Estudios:</label>
-        <select name="estudios" id="estudios">
-          <option value="pr">Primarios</option>
-          <option value="sc">Secundarios</option>
-          <option value="tr">Terciarios</option>
-          <option value="un">Universitarios</option>
-          <option value="ot">Otro</option>
-        </select>
-        <br>
-        <label for="comentarios">Comentarios:</label>
-        <br>
-        <textarea id="comentarios" title="Comentarios" rows="3" cols="20">
+      <div class="grid_item_header_nav">
+            <a href="../index.html" ><i class="fas fa-home"></i> Home</a>
+            <a href="#top" ><i class="fas fa-map-marker-alt"></i> Oficinas</a>
+            <a href="nuestras_marcas.html" ><i class="fas fa-users"></i> Nuestras Marcas</a>
+            <a href="contacto.html" ><i class="fas fa-at"></i> Contacto</a>
+            <a href="registrarse.html" ><i class="fas fa-user-plus"></i> Crear Cuenta</a>
+      </div>
 
-        </textarea>
-        <br>
-        <br>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Borrar">
-        <br>
-        <br>
-        Si Ud hace click en el botón "Enviar", la información será enviada a la página "datos_formulario.html"
-        <br>
-        <br>
+      <div class="registrarse_grid_item_form mx-5">
+
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label fw-bold">Correo Electrónico</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Introduce tu correo electrónico" required>
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label fw-bold">Contraseña</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Introduce tu contraseña" required>
+          </div>
+          <div class="col-12">
+            <label for="inputNombre" class="form-label fw-bold">Nombre</label>
+            <input type="text" class="form-control" id="inputNombre" placeholder="Introduce tu nombre">
+          </div>
+          <div class="col-12">
+            <label for="inputApellido" class="form-label fw-bold">Apellido</label>
+            <input type="text" class="form-control" id="inputApellido" placeholder="Introduce tu apellido">
+          </div>
+          <div class="col-12 mt-2">
+            <label for="inputApellido" class="form-label fw-bold">Sexo</label>
+          </div>
+          <div class="col-12">
+            <input class="form-check-input mt-0" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+            <label class="form-check-label px-2 mx-2 mt-0" for="inlineRadio1">Hombre</label>
+            <input class="form-check-input mt-0" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label px-2 mx-2 mt-0" for="inlineRadio2">Mujer</label>
+            <input class="form-check-input mt-0" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label px-2 mx-2 mt-0" for="inlineRadio3">No Binario</label>
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" required>
+              <label class="form-check-label" for="gridCheck"> Al registrarte, aceptas los Términos y Condiciones de Uso de Pointer Rent a Car.</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck"> Compartir mis datos de registro con los proveedores de autos para fines de marketing.</label>
+            </div>
+            <button type="submit" class="btn btn-colcss btn-lg mt-4">Registrarse</button>
+          </div>
           
-      </form>
-    
-    </main>
+          
+        </form>
+      
+      </div>
+      
 
-    <footer class="footer">
-      <p class="pfooter">
-        <a class="linkfooter" href="http://www.facebook.com" title="Facebook" target="_blank">
+      <div class="grid_item_footer">
+
+        <a href="http://www.facebook.com" title="Facebook" target="_blank">
           <i class="fab fa-facebook-square fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.twitter.com" title="Twitter" target="_blank">
+        <a href="http://www.twitter.com" title="Twitter" target="_blank">
           <i class="fab fa-twitter-square fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.instagram.com" title="Instagram" target="_blank">
+        <a href="http://www.instagram.com" title="Instagram" target="_blank">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.pinterest.com" title="Pinterest" target="_blank">
+        <a href="http://www.pinterest.com" title="Pinterest" target="_blank">
           <i class="fab fa-pinterest-square fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.linkedin.com" title="LinkedIn" target="_blank">
+        <a href="http://www.linkedin.com" title="LinkedIn" target="_blank">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.youtube.com" title="Youtube" target="_blank">
+        <a href="http://www.youtube.com" title="Youtube" target="_blank">
           <i class="fab fa-youtube fa-2x"></i> 
         </a>
-      </p>
 
-      <!-- <img src="https://image.flaticon.com/icons/png/512/2504/2504903.png" alt="Facebook" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/3256/3256013.png" alt="Twitter" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/3670/3670125.png" alt="Instagram" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/2175/2175205.png" alt="Pinterest" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/3536/3536505.png" alt="LinkedIn" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/3991/3991722.png" alt="LinkedIn" width="16" height="16"> -->
-      
-      <h4><strong>Derechos Reservados @2021 - La Nona</strong></h4>
-      
-    </footer>
+        <h4>Derechos Reservados @2021 - Pointer Rent a Car</h4>
+
+      </div>
+
+    </div>
 
   </body>
 
