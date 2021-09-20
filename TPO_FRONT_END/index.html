@@ -48,7 +48,7 @@
     ●   Tener una página totalmente responsive con 3 puntos de corte para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). (Falta)
     ●   Utilizar al menos una animación, transformación o una transición (indicar dónde fue incorporada la animación). (OK. Se utilizó :hover en el Nav y animaciones en títulos)
     ●   Poseer una estructura HTML maquetada con Flexbox y/o Grid. (todas las páginas tienen grid)
-    ●   Sólo podrá utilizar Bootstrap en la página del formulario del sitio web. (Falta)
+    ●   Sólo podrá utilizar Bootstrap en la página del formulario del sitio web. (Ok)
     ●   La página deberá subirse a un servidor on-line para poder ser navegada por el Docente. Ejemplo: Netlify o similar. (Falta. Subirla en Netlify)
     ●   Además de los aspectos técnicos ya mencionados, el proyecto deberá contemplar aspectos de diseño los cuales serán evaluados por el Docente. 
         Para eso se recomienda que vean el material disponible en el Aula Virtual. Seminario de Diseño Web: https://youtu.be/fVkGt2tYIj0. Para más  información, ver material incluído en el Aula 
@@ -68,15 +68,15 @@
     agregándole lo que falte para cumplir con los requisitos.
      -->
 
-     <div class="index_grid_container">
+     <div class="index_gc"> <!-- Empieza el container -->
 
       <a id="top"></a>
 
-      <div class="grid_item_header_logo">
+      <div class="gi_header_logo"> <!-- header_logo --> 
             <img class="flex_item_nav_logo" src="logo/car parking.png" alt="logo">
       </div>
       
-      <div class="grid_item_header_nav">
+      <div class="gi_header_nav"> <!-- header_nav -->
             <a href="#top" ><i class="fas fa-home"></i> Home</a>
             <a href="pages/oficinas.html" ><i class="fas fa-map-marker-alt"></i> Oficinas</a>
             <a href="pages/nuestras_marcas.html" ><i class="fas fa-users"></i> Nuestras Marcas</a>
@@ -84,8 +84,9 @@
             <a href="pages/registrarse.html" ><i class="fas fa-user-plus"></i> Crear Cuenta</a>
       </div>
 
-      <div class="index_grid_item_aside1"></div>
-      <div class="index_grid_item_m_h">
+      <div class="index_gi_aside1"></div> <!-- aside1 -->
+
+      <div class="index_gi_main"> <!-- main -->
 
         <h1 class="animate__animated animate__flip">POINTER RENT A CAR</h1>
 
@@ -96,12 +97,14 @@
 
       </div>
 
-      <div class="index_grid_item_m_image">
+      <div class="index_gi_aside2"></div> <!-- aside2 -->
+
+      <div class="index_gi_image">
 
         <h2>Alquilá tu auto con "Protección Platinum"</h2>
         <h5>PARA UN VIAJE CON MÁXIMA COBERTURA</h5>
         <img src="images/road-lights.jpg" alt="road-lights">
-        <form action="" id="index_form1" method="GET" target="_blank"> <!-- Grid Conteiner -->
+        <form action="" id="index_form1" method="GET" target="_blank"> <!-- Container Form-->
           <select name="oficina" id="index_form1_select1"> <!-- Grid Item -->
             <option value=""> Seleccione una oficina de alquiler</option>
             <option value="1" ><i class="fas fa-map-marker-alt"></i> [HOM] Casa Central, Capital Federal</option>
@@ -134,23 +137,25 @@
 
       </div>
 
-      <div class="index_grid_item_m_image_2">
-        <img src="images/AV-1305X460_PREVIAJE.jpg" alt="Previaje">
-        <button>Más información</button>
+      <div class="index_gi_image2">
+            <img src="images/AV-1305X460_PREVIAJE.jpg" alt="Previaje">
+            <p>COMPRÁ HOY Y DISFRUTÁ ARGENTINA EN 2021 Y 2022</p>
+            <button type="submit" class="btn-colcss">Más Información</button>
+      </div>
         
+      <div class="index_gi_image3">
+            <img src="images/home_AHORA12_1305x460.jpg" alt="Ahora_12">
+            <p>6 Y 12 CUOTAS SIN INTERÉS EN TODOS LOS DESTINOS</p>
+            <button type="submit" class="btn-colcss">Más Información</button>
       </div>
-      <div class="index_grid_item_m_image_3">
-        <img src="images/home_AHORA12_1305x460.jpg" alt="Ahora_12">
-        <button>Más información</button>
-      </div>
-      <div class="index_grid_item_image_4">
-        <img src="images/bannerPOL_1305X640.jpg" alt="Pago_Online">
-        <button>Más información</button>
-      </div>
-      <div class="index_grid_aside2"></div>
-    
 
-    <div class="grid_item_footer">
+      <div class="index_gi_image4">
+            <img src="images/bannerPOL_1305X640.jpg" alt="Pago_Online">
+            <p>20% OFF pagando en 1 CUOTA</p>
+            <button type="submit" class="btn-colcss">Más Información</button>
+      </div>
+
+    <div class="gi_footer">
 
       <a href="http://www.facebook.com" title="Facebook" target="_blank">
         <i class="fab fa-facebook-square fa-2x"></i>

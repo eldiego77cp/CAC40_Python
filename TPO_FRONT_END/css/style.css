@@ -2,36 +2,36 @@
 /* Por la especificidad se deben utilizar los IDs y Clases/Pseudoclases. Los del tipo !important deben ser limitados y excepcionales */
 
 /* ---------------------------------- Componentes para todas las páginas del TPO ----------------------------------*/
-.grid_item_header_logo {
+.gi_header_logo {
         grid-area: header_logo;
         height: 60px;
         background-image: linear-gradient( to top, #cccccc, #d4d4d4, #dddddd, #e5e5e5, #eeeeee);
         
 }
-.grid_item_header_logo img {
+.gi_header_logo img {
         width: 60px;
         height: 60px;
         padding: 5px 5px;
 
 }
-.grid_item_header_nav {
+.gi_header_nav {
         grid-area: header_nav;
         height: 60px;
         background-image: linear-gradient( to top, #cccccc, #d4d4d4, #dddddd, #e5e5e5, #eeeeee);
         padding: 20px 0px;
 }
-.grid_item_header_nav a {
+.gi_header_nav a {
         color: #999999;
         margin: 5px 3px;
         transition: all .05s;
 } 
-.grid_item_header_nav a:active, .grid_item_header_nav a:visited, .grid_item_header_nav a:link {
+.gi_header_nav a:active, .gi_header_nav a:visited, .gi_header_nav a:link {
         font-family: sans-serif;
         padding: 7px;
         color: #999999;
         text-decoration: none;
 }
-.grid_item_header_nav a:hover {
+.gi_header_nav a:hover {
         background-color: #ffffff;
         color: #2b78c2;
         border-radius: 10px;
@@ -39,7 +39,7 @@
 .fa-home, .fa-user, .fa-at, .fa-user-plus, .fa-map-marker-alt, .fa-users {
         color: #999999; /* Iconos del nav */
 }
-.grid_item_footer {
+.gi_footer {
         grid-area: footer;
         width: 100vw;
         height: 100px;
@@ -49,13 +49,13 @@
         width: 100%;
         text-align: center;
 }
-.grid_item_footer a {
+.gi_footer a {
         display: inline-block;
         margin-top: 0.5em;
         margin-left: 0.5em;
         text-decoration: none;
 }
-.grid_item_footer h4 {
+.gi_footer h4 {
         font-family: Arial, Helvetica, sans-serif;
         padding: 0.2em;
 }
@@ -98,40 +98,44 @@
 
 /* ------------------------------------------------ Componentes de cada página -------------------------------------------------*/
 /* -------------------------------------------------------- index.html ---------------------------------------------------------*/
-.index_grid_container {
+.index_gc {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 70px 200px repeat(3, 1fr) 100px;
+        grid-template-rows: 70px 200px 1fr repeat(2, 460px) 100px;
         grid-template-areas: 
                 "header_logo    header_nav      header_nav      header_nav      header_nav      header_nav"
-                "aside1         m_h             m_h             m_h             m_h             aside2"
+                "aside1         main            main            main            main            aside2"
                 "image          image           image           image           image           image"
-                "image_2        image_2         image_2         image_3         image_3         image_3"
-                "image_4        image_4         image_4         image_4         image_4         image_4 "
+                "image2         image2          image2          image2          image2          image2"
+                "image3         image3          image3          image4          image4          image4"
                 "footer         footer          footer          footer          footer          footer";
+        column-gap: 10px;
 }
-.index_grid_item_aside1 {
+.index_gi_aside1 {
         grid-area: aside1;
 }
-.index_grid_item_m_h {
+.index_gi_main {
         background-color: #7897ab;
-        grid-area: m_h;
+        grid-area: main;
         height: auto;
         text-align: center;
+        margin-bottom: 10px;
 }
-.index_grid_item_m_image {
+.index_gi_image {
         width: 100vw;
         height: 768px;
         grid-area: image;
         position: relative;
+        margin-bottom: 5px;
+        margin-left: 10px;
 }
-.index_grid_item_m_image img {
+.index_gi_image img {
         width: 100vw;
         height: 768px;
         position: absolute;
         z-index: 20;
 }
-.index_grid_item_m_image h2 {
+.index_gi_image h2 {
         color: #ffffff;
         text-align: center;
         width: auto;
@@ -142,7 +146,7 @@
         right: 0;
         margin: auto;
 }
-.index_grid_item_m_image h5 {
+.index_gi_image h5 {
         color: #ffffff;
         text-align: center;
         width: auto;
@@ -153,16 +157,117 @@
         right: 0;
         margin: auto;
 }
-.index_grid_item_m_image_2 {
-        grid-area: image_2;
+.index_gi_image2 {
+        width: 100vw;
+        height: 450px;
+        grid-area: image2;
+        position: relative;
+        margin-bottom: 5px;
+        margin-left: 10px;
 }
-.index_grid_item_m_image_3 {
-        grid-area: image_3;
+.index_gi_image2 img {
+        width: 100vw;
+        height: 450px;
+        position: absolute;
+        z-index: 20;
 }
-.index_grid_item_m_image_4 {
-        grid-area: image_4;   
+.index_gi_image2 button {
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        position: absolute;
+        z-index: 30;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        margin: auto;
 }
-.index_grid_item_aside2 {
+.index_gi_image2 p {
+        width: 100vw;
+        height: 150px;
+        background-color: #00000077;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.5em;
+        position: absolute;
+        z-index: 30;
+        bottom: 0;
+        margin: auto;
+}
+.index_gi_image3 {
+        width: 50vw;
+        height: 450px;
+        grid-area: image3;
+        position: relative;
+        margin-bottom: 5px;
+        margin-left: 10px;
+}
+.index_gi_image3 img {
+        width: 50vw;
+        height: 450px;
+        position: absolute;
+        z-index: 20;
+}
+.index_gi_image3 button {
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        position: absolute;
+        z-index: 30;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        margin: auto;
+}
+.index_gi_image3 p {
+        width: 50vw;
+        height: 140px;
+        background-color: #00000077;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        z-index: 30;
+        bottom: 0;
+        margin: auto;
+}
+.index_gi_image4 {
+        width: 50vw;
+        height: 450px;
+        grid-area: image4;
+        position: relative;
+        margin-right: 0px; 
+}
+.index_gi_image4 img {
+        width: 50vw;
+        height: 450px;
+        position: absolute;
+        z-index: 20;
+}
+.index_gi_image4 p {
+        width: 50vw;
+        height: 140px;
+        background-color: #00000077;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        z-index: 30;
+        bottom: 0;
+        margin: auto;
+}
+.index_gi_image4 button {
+        width: 200px;
+        height: 50px;
+        font-weight: bold;
+        position: absolute;
+        z-index: 30;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        margin: auto;
+}
+.index_gi_aside2 {
         grid-area: aside2;
 }
 
@@ -214,48 +319,45 @@
         color: #ffffff;
         font-size: 18px;
 }
-.index_form1_input_label1, .index_form1_input_label2, .index_form1_input_label3 {
-        
-}
 
 /* ------------------------------------------------------- oficinas.html -------------------------------------------------------*/
-.oficinas_grid_container {
+.oficinas_gc {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 70px 60px repeat(2, 1fr) 100px;
         grid-template-areas: 
                 "header_logo    header_nav      header_nav      header_nav      header_nav"
-                "aside1         m_h1            m_h1            m_h1            aside2"
-                "aside1         m_iframe1       m_iframe2       m_iframe3       aside2"
-                "aside1         m_iframe4       m_iframe5       m_iframe6       aside2"
+                "aside1         main            main            main            aside2"
+                "aside1         iframe1         iframe2         iframe3         aside2"
+                "aside1         iframe4         iframe5         iframe6         aside2"
                 "footer         footer          footer          footer          footer";
 }
-.oficinas_grid_item_aside1 {
+.oficinas_gi_aside1 {
         grid-area: aside1;
 }
-.oficinas_grid_item_m_h1 {
+.oficinas_gi_main {
         background-color: #7897ab;
-        grid-area: m_h1;
+        grid-area: main;
         height: 3em;
         text-align: center;
 }
-.oficinas_grid_item_m_iframe1 {
-        grid-area: m_iframe1;
+.oficinas_gi_iframe1 {
+        grid-area: iframe1;
 }
-.oficinas_grid_item_m_iframe2 {
-        grid-area: m_iframe2;
+.oficinas_gi_iframe2 {
+        grid-area: iframe2;
 }
-.oficinas_grid_item_m_iframe3 {
-        grid-area: m_iframe3;
+.oficinas_gi_iframe3 {
+        grid-area: iframe3;
 }
-.oficinas_grid_item_m_iframe4 {
-        grid-area: m_iframe4;   
+.oficinas_gi_iframe4 {
+        grid-area: iframe4;   
 }
-.oficinas_grid_item_m_iframe5 {
-        grid-area: m_iframe5;
+.oficinas_gi_iframe5 {
+        grid-area: iframe5;
 }
-.oficinas_grid_item_m_iframe6 {
-        grid-area: m_iframe6;   
+.oficinas_gi_iframe6 {
+        grid-area: iframe6;   
 }
 div iframe {
         width: 200px;
@@ -282,78 +384,77 @@ div p a:hover {
         color: #2b78c2;
         border-radius: 10px;
 }
-.oficinas_grid_item_aside2 {
+.oficinas_gi_aside2 {
         grid-area: aside2;
 }
 
 /* ------------------------------------------------------ nuestras_marcas.html -------------------------------------------------------*/
-.nuestras_marcas_grid_container {
+.nuestras_marcas_gc {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: 70px 60px repeat(3, 1fr) 100px;
+        grid-template-rows: 70px 100 px repeat(3, 1fr) 100px;
         grid-template-areas: 
                 "header_logo    header_nav      header_nav      header_nav      header_nav      header_nav"
-                "aside1         m_h1            m_h1            m_h1            m_h1            aside2"
-                "aside1         m_logo_1        m_logo_2        m_logo_3        m_logo_4        aside2"
-                "aside1         m_logo_5        m_logo_6        m_logo_7        m_logo_8        aside2"
-                "aside1         m_logo_9        m_logo_10       m_logo_11       m_logo_12       aside2"
+                "aside1         main            main            main            main            aside2"
+                "aside1         logo1           logo2           logo3           logo4           aside2"
+                "aside1         logo5           logo6           logo7           logo8           aside2"
+                "aside1         logo9           logo10          logo11          logo12          aside2"
                 "footer         footer          footer          footer          footer          footer";
 }
-.oficinas_grid_item_aside1 {
+.nuestras_marcas_gi_aside1 {
         grid-area: aside1;
 }
-.nuestras_marcas_grid_item_m_h1 {
+.nuestras_marcas_gi_main {
         background-color: #7897ab;
-        grid-area: m_h1;
-        height: 3em;
+        grid-area: main;
         text-align: center;
 }
-.nuestras_marcas_grid_item_m_logo_1 {
-        grid-area: m_logo_1;
+.nuestras_marcas_gi_logo1 {
+        grid-area: logo1;
 }
-.nuestras_marcas_grid_item_m_logo_2 {
-        grid-area: m_logo_2;
+.nuestras_marcas_gi_logo2 {
+        grid-area: logo2;
 }
-.nuestras_marcas_grid_item_m_logo_3 {
-        grid-area: m_logo_3;
+.nuestras_marcas_gi_logo3 {
+        grid-area: logo3;
 }
-.nuestras_marcas_grid_item_m_logo_4 {
-        grid-area: m_logo_4;   
+.nuestras_marcas_gi_logo4 {
+        grid-area: logo4;   
 }
-.nuestras_marcas_grid_item_m_logo_5 {
-        grid-area: m_logo_5;
+.nuestras_marcas_gi_logo5 {
+        grid-area: logo5;
 }
-.nuestras_marcas_grid_item_m_logo_6 {
-        grid-area: m_logo_6;   
+.nuestras_marcas_gi_logo6 {
+        grid-area: logo6;   
 }
-.nuestras_marcas_grid_item_m_logo_7 {
-        grid-area: m_logo_7;
+.nuestras_marcas_gi_logo7 {
+        grid-area: logo7;
 }
-.nuestras_marcas_grid_item_m_logo_8 {
-        grid-area: m_logo_8;
+.nuestras_marcas_gi_logo8 {
+        grid-area: logo8;
 }
-.nuestras_marcas_grid_item_m_logo_9 {
-        grid-area: m_logo_9;
+.nuestras_marcas_gi_logo9 {
+        grid-area: logo9;
 }
-.nuestras_marcas_grid_item_m_logo_10 {
-        grid-area: m_logo_10;   
+.nuestras_marcas_gi_logo10 {
+        grid-area: logo10;   
 }
-.nuestras_marcas_grid_item_m_logo_11 {
-        grid-area: m_logo_11;
+.nuestras_marcas_gi_logo11 {
+        grid-area: logo11;
 }
-.nuestras_marcas_grid_item_m_logo_12 {
-        grid-area: m_logo_12;   
+.nuestras_marcas_gi_logo12 {
+        grid-area: logo12;   
 }
 div img {
         width: 200px;
         height: 200px;
 }
-.nuestras_marcas_grid_item_aside2 {
+.nuestras_marcas_gi_aside2 {
         grid-area: aside2;
 }
 
 /* ------------------------------------------------------ registrarse.html -------------------------------------------------------*/
-.registrarse_grid_container {
+.registrarse_gc {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 70px 1fr 100px;
@@ -362,7 +463,7 @@ div img {
                 "form           form            form            form            form            form"
                 "footer         footer          footer          footer          footer          footer";
 }
-.registrarse_grid_item_form {
+.registrarse_gi_form {
         grid-area: form;
 }
 .form-check-input:checked {
