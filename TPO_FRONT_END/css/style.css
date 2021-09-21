@@ -100,7 +100,7 @@
 /* -------------------------------------------------------- index.html ---------------------------------------------------------*/
 .index_gc {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: 10vw repeat(4, 20vw) 10vw;
         grid-template-rows: 70px 200px 1fr repeat(2, 460px) 100px;
         grid-template-areas: 
                 "header_logo    header_nav      header_nav      header_nav      header_nav      header_nav"
@@ -109,7 +109,7 @@
                 "image2         image2          image2          image2          image2          image2"
                 "image3         image3          image3          image4          image4          image4"
                 "footer         footer          footer          footer          footer          footer";
-        column-gap: 10px;
+        row-gap: 10px; 
 }
 .index_gi_aside1 {
         grid-area: aside1;
@@ -119,21 +119,25 @@
         grid-area: main;
         height: auto;
         text-align: center;
-        margin-bottom: 10px;
+        
 }
 .index_gi_image {
         width: 100vw;
         height: 768px;
         grid-area: image;
         position: relative;
-        margin-bottom: 5px;
-        margin-left: 10px;
+        border: 10px solid #ffffff;
 }
 .index_gi_image img {
-        width: 100vw;
+        width: 100%;
         height: 768px;
         position: absolute;
         z-index: 20;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
 }
 .index_gi_image h2 {
         color: #ffffff;
@@ -159,17 +163,21 @@
 }
 .index_gi_image2 {
         width: 100vw;
-        height: 450px;
+        height: 460px;
         grid-area: image2;
         position: relative;
-        margin-bottom: 5px;
-        margin-left: 10px;
+        border: 10px solid #ffffff;
 }
 .index_gi_image2 img {
-        width: 100vw;
-        height: 450px;
+        width: 100%;
+        height: 460px;
         position: absolute;
         z-index: 20;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
 }
 .index_gi_image2 button {
         width: 200px;
@@ -196,15 +204,14 @@
 }
 .index_gi_image3 {
         width: 50vw;
-        height: 450px;
+        height: 460px;
         grid-area: image3;
         position: relative;
-        margin-bottom: 5px;
         margin-left: 10px;
 }
 .index_gi_image3 img {
-        width: 50vw;
-        height: 450px;
+        width: 49vw;
+        height: 460px;
         position: absolute;
         z-index: 20;
 }
@@ -220,7 +227,7 @@
         margin: auto;
 }
 .index_gi_image3 p {
-        width: 50vw;
+        width: 49vw;
         height: 140px;
         background-color: #00000077;
         color: #ffffff;
@@ -233,14 +240,15 @@
 }
 .index_gi_image4 {
         width: 50vw;
-        height: 450px;
+        height: 460px;
         grid-area: image4;
         position: relative;
-        margin-right: 0px; 
+        margin-right: 1vw;
+        
 }
 .index_gi_image4 img {
-        width: 50vw;
-        height: 450px;
+        width: 49vw;
+        height: 460px;
         position: absolute;
         z-index: 20;
 }
