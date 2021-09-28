@@ -1,9 +1,9 @@
-/* (1) */ 
+/* (1) */
 /*
 alert("Hello World");
 */
 
-/* (2) */ 
+/* (2) */
 /*
 document.write("Hello World");
 */
@@ -238,9 +238,6 @@ else {
 
 /* (17) */
 
-
-
-
 /* (18) */
 /*
 let edad = parseInt(prompt("Ingrese su edad ", ""));
@@ -253,8 +250,7 @@ else{
 */
 
 /* (19) */
-
-
+/*
 let nota = parseInt(prompt("Ingrese una nota ", ""));
 switch (nota) {
     case 10:
@@ -268,7 +264,7 @@ switch (nota) {
     case 6:
         document.write(`Bien`);
         break;
-    case 5:
+    case 5:Fra
         document.write(`Suficiente`);
         break;
     case 4:
@@ -284,13 +280,127 @@ switch (nota) {
         document.write(`La nota no es válida`);
         break;
 }
+*/
 
+/* (20) */
+/*
+let script;
+let scriptAcumulador = "";
+do {
+    script = prompt("Ingrese varias frases. Presione cancelar cuando ya no quiera ingresar más", "");
+    if(script === null) {break;} 
+        else {scriptAcumulador += `${script}<br>`;}
+} while (script !== null)
+if(scriptAcumulador === "" || scriptAcumulador === null) {
+    document.write(`No se ha ingresado ninguna frase`);} 
+else {
+    document.write(`Las frases ingresadas fueron las siguientes:<br><br> ${scriptAcumulador}`);
+}
+*/
 
+/* (21) */
+/*
+let num;
+let suma=0;
+do {
+    num = prompt("Ingrese varios números positivos. Presione cancelar cuando ya no quiera ingresar más", "");
+    if(num === null || parseInt(num) < 0) {break;} 
+        else {suma += parseInt(num);}
+} while (num !== null)
+if(suma === 0) {
+    document.write(`No se han ingresado números`);
+} 
+else if(parseInt(num) < 0) {
+    document.write(`Ud ha intentado introducir un número negativo. El proceso se ha cancelado <br>`);
+    document.write(`La suma de los números ingresados hasta el momento, sin contar el número negativo, es la siguiente:<br><br> ${suma}`);
+}
+else {
+    document.write(`La suma de los números ingresados es la siguiente:<br><br> ${suma}`);
+}
+*/
 
+/* (22) */
 
+let nanNum = true;
+do {
 
+while (nanNum === true) {
+    let num = prompt("Ingrese un número de DNI entre 0 y 99999999", "");
+    if( num === null) {break;}
+    nanNum = Number.isNaN(parseInt(num));
+    alert(nanNum);
+}
 
-
-
-
-
+let resto = parseInt(num) % 23;
+  switch (resto) {
+    case 1:
+      alert(`La letra asignada a su DNI es la R`);
+      break;
+    case 2:
+      alert(`La letra asignada a su DNI es la W`);
+      break;
+    case 3:
+      alert(`La letra asignada a su DNI es la A`);
+      break;
+    case 4:
+      alert(`La letra asignada a su DNI es la G`);
+      break;
+    case 5:
+      alert(`La letra asignada a su DNI es la M`);
+      break;
+    case 6:
+      alert(`La letra asignada a su DNI es la Y`);
+      break;
+    case 7:
+      alert(`La letra asignada a su DNI es la F`);
+      break;
+    case 8:
+      alert(`La letra asignada a su DNI es la P`);
+      break;
+    case 9:
+      alert(`La letra asignada a su DNI es la D`);
+      break;
+    case 10:
+      alert(`La letra asignada a su DNI es la X`);
+      break;
+    case 11:
+      alert(`La letra asignada a su DNI es la B`);
+      break;
+    case 12:
+      alert(`La letra asignada a su DNI es la N`);
+      break;
+    case 13:
+      alert(`La letra asignada a su DNI es la J`);
+      break;
+    case 14:
+      alert(`La letra asignada a su DNI es la Z`);
+      break;
+    case 15:
+      alert(`La letra asignada a su DNI es la S`);
+      break;
+    case 16:
+      alert(`La letra asignada a su DNI es la Q`);
+      break;
+    case 17:
+      alert(`La letra asignada a su DNI es la V`);
+      break;
+    case 18:
+      alert(`La letra asignada a su DNI es la H`);
+      break;
+    case 19:
+      alert(`La letra asignada a su DNI es la L`);
+      break;
+    case 20:
+      alert(`La letra asignada a su DNI es la C`);
+      break;
+    case 21:
+      alert(`La letra asignada a su DNI es la K`);
+      break;
+    case 22:
+      alert(`La letra asignada a su DNI es la E`);
+      break;
+    default:
+      alert(`La letra asignada a su DNI es la T`);
+      break;
+  }
+} while (parseInt(num) >= 0 && parseInt(num) <= 99999999);
