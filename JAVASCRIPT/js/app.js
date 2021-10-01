@@ -320,87 +320,133 @@ else {
 */
 
 /* (22) */
+/*
+let num;
+let resto;
 
-let nanNum = true;
-do {
+while (num !== null) {
+    
+    do{
+    num = prompt("Ingrese un número de DNI entre 0 y 99999999", "");
+        if(isNaN(num) === true) {
+            alert(`El valor ingresado no es un número válido. Ingrese un nuevo valor.`);
+        }
+    } while (isNaN(num) === true);
 
-while (nanNum === true) {
-    let num = prompt("Ingrese un número de DNI entre 0 y 99999999", "");
-    if( num === null) {break;}
-    nanNum = Number.isNaN(parseInt(num));
-    alert(nanNum);
+    resto = parseInt(num) % 23;
+    switch (resto) {
+        case 1:
+            alert(`La letra asignada a su DNI es la R`);
+            break;
+        case 2:
+            alert(`La letra asignada a su DNI es la W`);
+            break;
+        case 3:
+            alert(`La letra asignada a su DNI es la A`);
+            break;
+        case 4:
+            alert(`La letra asignada a su DNI es la G`);
+            break;
+        case 5:
+            alert(`La letra asignada a su DNI es la M`);
+            break;
+        case 6:
+            alert(`La letra asignada a su DNI es la Y`);
+            break;
+        case 7:
+            alert(`La letra asignada a su DNI es la F`);
+            break;
+        case 8:
+            alert(`La letra asignada a su DNI es la P`);
+            break;
+        case 9:
+            alert(`La letra asignada a su DNI es la D`);
+            break;
+        case 10:
+            alert(`La letra asignada a su DNI es la X`);
+            break;
+        case 11:
+            alert(`La letra asignada a su DNI es la B`);
+            break;
+        case 12:
+            alert(`La letra asignada a su DNI es la N`);
+            break;
+        case 13:
+            alert(`La letra asignada a su DNI es la J`);
+            break;
+        case 14:
+            alert(`La letra asignada a su DNI es la Z`);
+            break;
+        case 15:
+            alert(`La letra asignada a su DNI es la S`);
+            break;
+        case 16:
+            alert(`La letra asignada a su DNI es la Q`);
+            break;
+        case 17:
+            alert(`La letra asignada a su DNI es la V`);
+            break;
+        case 18:
+            alert(`La letra asignada a su DNI es la H`);
+            break;
+        case 19:
+            alert(`La letra asignada a su DNI es la L`);
+            break;
+        case 20:
+            alert(`La letra asignada a su DNI es la C`);
+            break;
+        case 21:
+            alert(`La letra asignada a su DNI es la K`);
+            break;
+        case 22:
+            alert(`La letra asignada a su DNI es la E`);
+            break;
+        default:
+            if(num === null) {
+                break;
+            }
+                else {
+                    alert(`La letra asignada a su DNI es la T`);
+                    break;
+                }
+    }
 }
+*/
 
-let resto = parseInt(num) % 23;
-  switch (resto) {
-    case 1:
-      alert(`La letra asignada a su DNI es la R`);
-      break;
-    case 2:
-      alert(`La letra asignada a su DNI es la W`);
-      break;
-    case 3:
-      alert(`La letra asignada a su DNI es la A`);
-      break;
-    case 4:
-      alert(`La letra asignada a su DNI es la G`);
-      break;
-    case 5:
-      alert(`La letra asignada a su DNI es la M`);
-      break;
-    case 6:
-      alert(`La letra asignada a su DNI es la Y`);
-      break;
-    case 7:
-      alert(`La letra asignada a su DNI es la F`);
-      break;
-    case 8:
-      alert(`La letra asignada a su DNI es la P`);
-      break;
-    case 9:
-      alert(`La letra asignada a su DNI es la D`);
-      break;
-    case 10:
-      alert(`La letra asignada a su DNI es la X`);
-      break;
-    case 11:
-      alert(`La letra asignada a su DNI es la B`);
-      break;
-    case 12:
-      alert(`La letra asignada a su DNI es la N`);
-      break;
-    case 13:
-      alert(`La letra asignada a su DNI es la J`);
-      break;
-    case 14:
-      alert(`La letra asignada a su DNI es la Z`);
-      break;
-    case 15:
-      alert(`La letra asignada a su DNI es la S`);
-      break;
-    case 16:
-      alert(`La letra asignada a su DNI es la Q`);
-      break;
-    case 17:
-      alert(`La letra asignada a su DNI es la V`);
-      break;
-    case 18:
-      alert(`La letra asignada a su DNI es la H`);
-      break;
-    case 19:
-      alert(`La letra asignada a su DNI es la L`);
-      break;
-    case 20:
-      alert(`La letra asignada a su DNI es la C`);
-      break;
-    case 21:
-      alert(`La letra asignada a su DNI es la K`);
-      break;
-    case 22:
-      alert(`La letra asignada a su DNI es la E`);
-      break;
-    default:
-      alert(`La letra asignada a su DNI es la T`);
-      break;
-  }
-} while (parseInt(num) >= 0 && parseInt(num) <= 99999999);
+/* (23) */
+/*
+for (let num = 1; num <= 30; num++) {
+        str = `${num}`;
+        resultado = str.repeat(num);
+        document.write(`${resultado} <br>`);
+}
+*/
+
+/* (24) */
+/*
+for (let num = prompt("Ingrese un número", ""); num >= 1; num--) {
+    str = `${num}`;
+    resultado = str.repeat(num);
+    document.write(`${resultado} <br>`);
+}
+*/
+
+/* (25) */
+
+str = "-"
+
+for (let num = 1; num <= 500; num++) {
+    if(num % 5 === 0) {
+        document.write(`${num} <br>`);
+        document.write(str.repeat(40) + `<br>`);
+    } else if(num % 4 === 0 && num % 9 === 0) {
+        document.write(`${num} (Múltiplo de 4 y de 9) <br>`);
+    } else if(num % 4 === 0) {
+        document.write(`${num} (Múltiplo de 4) <br>`);
+    } else if(num % 9 === 0) {
+        document.write(`${num} (Múltiplo de 9) <br>`);
+    } else {
+        document.write(`${num} <br>`);
+    }
+}
+ 
