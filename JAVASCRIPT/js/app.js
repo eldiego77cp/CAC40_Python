@@ -432,8 +432,8 @@ for (let num = prompt("Ingrese un número", ""); num >= 1; num--) {
 */
 
 /* (25) */
-
-str = "-"
+/*
+let str = "-"
 
 for (let num = 1; num <= 500; num++) {
     if(num % 5 === 0) {
@@ -449,4 +449,4 @@ for (let num = 1; num <= 500; num++) {
         document.write(`${num} <br>`);
     }
 }
- 
+*/
