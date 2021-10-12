@@ -8,8 +8,8 @@ let username = id("username"),
   password = id("password"),
   form = id("form"),
   errorMsg = classes("error"),
-  okIcon = classes("ok-icon"),
-  errorIcon = classes("error-icon");
+  okIcon = classes("success-icon"),
+  errorIcon = classes("failure-icon");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
