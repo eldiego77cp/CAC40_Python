@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Formulario de Contacto</title>
 
     <!-- Hoja de estilos CSS3 -->
     <link rel="stylesheet" type="text/css" href="../css/normalize.css">
@@ -32,75 +32,110 @@
 
   <body>
 
-    <header class="header">
-      <a id="top"></a>
+    <div class="contacto_gc">
 
-      <nav class="nav">
-        <table>
-          <th>
-            <a class="linknav" href="../index.html" ><i class="fas fa-home"></i> Home</a>
-          </th>
-          <th>
-            <a class="linknav" href="acerca_de.html" ><i class="fas fa-user"></i> A cerca de</a
-              ></th>
-          <th>
-            <a class="linknav" href="#top" ><i class="fas fa-at"></i> Contacto</a>
-          </th>
-          <th>
-            <a class="linknav" href="registrarse.html" ><i class="fas fa-user-plus"></i> Registrarse</a>
-          </th>
-          <th>
-            <a class="linknav" href="sucursales.html" ><i class="fas fa-map-marker-alt"></i> Sucursales</a>
-          </th>
-          <th>
-            <a class="linknav" href="nuestros_clientes.html" ><i class="fas fa-users"></i> Nuestros Clientes</a>
-          </th>
-        </table>
-      </nav>
+      <div class="gi_header_logo" id="top">
+            <img class="flex_item_nav_logo" src="../logo/car_parking.png" alt="logo">
+      </div>
       
-      <h1 class="animate__animated animate__flip">La Cocina De La Nona</h1>
-
-    </header>
-
-    <main class="main">
-
-      <p style="text-align: left; font-size:24px;"><ins><strong>Contacto</strong></ins></p>
-      <p>Enviame tus sugerencias de recetas a: <a href="mailto:sugerencias@gmail.com">sugerencias@gmail.com</a></p>
+      <div class="gi_header_nav">
+            <a href="../index.html" ><i class="fas fa-home"></i> Home</a>
+            <a href="oficinas.html" ><i class="fas fa-map-marker-alt"></i> Oficinas</a>
+            <a href="nuestras_marcas.html" ><i class="fas fa-users"></i> Nuestras Marcas</a>
+            <a href="#top" ><i class="fas fa-at"></i> Contacto</a>
+            <a href="registro.html" ><i class="fas fa-user-plus"></i> Registro / Login</a>
+      </div>
+        
+      <div class="contacto_gi_aside1"></div>
       
-    </main>
+      <div class="contacto_gi_main">
+      
+        <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="well well-sm">
+                      <form class="form-horizontal" method="post">
+                          <fieldset>
+                              <legend class="text-center header_bs">Formulario de contacto</legend>
+      
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center fw-bold"><i class="fa fa-user bigicon"></i> Nombre</span>
+                                  <div class="col-md-12">
+                                      <input id="fname" name="name" type="text" placeholder="Ingrese su nombre" class="form-control">
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center fw-bold"><i class="fa fa-user bigicon"></i> Apellido</span>
+                                  <div class="col-md-12">
+                                      <input id="lname" name="name" type="text" placeholder="Ingrese su apellido" class="form-control">
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center fw-bold"><i class="fa fa-envelope-o bigicon"></i> Correo Electrónico</span>
+                                  <div class="col-md-12">
+                                      <input id="email" name="email" type="text" placeholder="Ingrese su e-mail de contacto" class="form-control">
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center fw-bold"><i class="fa fa-phone-square bigicon"></i> Teléfono</span>
+                                  <div class="col-md-12">
+                                      <input id="phone" name="phone" type="text" placeholder="Ingrese su teléfono/celular" class="form-control">
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <span class="col-md-1 col-md-offset-2 text-center fw-bold"><i class="fa fa-pencil-square-o bigicon"></i> Mensaje</span>
+                                  <div class="col-md-12">
+                                      <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje aquí. Nos contactaremos dentro de las próximas 48 hs para poder brindarle un mejor servicio." rows="7"></textarea>
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <div class="col-md-12 text-center">
+                                      <button type="submit" class="btn btn-colcss btn-lg">Enviar</button>
+                                  </div>
+                              </div>
+                          </fieldset>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
 
-    <footer class="footer">
-      <p class="pfooter">
-        <a class="linkfooter" href="http://www.facebook.com" title="Facebook" target="_blank">
+      </div>
+        
+      
+      <div class="nuestras_marcas_gi_aside2"></div>
+
+      <div class="gi_footer">
+
+        <a href="http://www.facebook.com" title="Facebook" target="_blank">
           <i class="fab fa-facebook-square fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.twitter.com" title="Twitter" target="_blank">
+        <a href="http://www.twitter.com" title="Twitter" target="_blank">
           <i class="fab fa-twitter-square fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.instagram.com" title="Instagram" target="_blank">
+        <a href="http://www.instagram.com" title="Instagram" target="_blank">
           <i class="fab fa-instagram fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.pinterest.com" title="Pinterest" target="_blank">
+        <a href="http://www.pinterest.com" title="Pinterest" target="_blank">
           <i class="fab fa-pinterest-square fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.linkedin.com" title="LinkedIn" target="_blank">
+        <a href="http://www.linkedin.com" title="LinkedIn" target="_blank">
           <i class="fab fa-linkedin fa-2x"></i>
         </a>
-        <a class="linkfooter" href="http://www.youtube.com" title="Youtube" target="_blank">
+        <a href="http://www.youtube.com" title="Youtube" target="_blank">
           <i class="fab fa-youtube fa-2x"></i> 
         </a>
-      </p>
 
-      <!-- <img src="https://image.flaticon.com/icons/png/512/2504/2504903.png" alt="Facebook" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/3256/3256013.png" alt="Twitter" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/3670/3670125.png" alt="Instagram" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/2175/2175205.png" alt="Pinterest" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/3536/3536505.png" alt="LinkedIn" width="16" height="16"> -->
-      <!-- <img src="https://image.flaticon.com/icons/png/512/3991/3991722.png" alt="LinkedIn" width="16" height="16"> -->
+        <h4>Derechos Reservados @2021 - Pointer Rent a Car</h4>
 
-      <h4><strong>Derechos Reservados @2021 - La Nona</strong></h4>
+      </div>
       
-    </footer>
+    </div>
+
 
   </body>
 

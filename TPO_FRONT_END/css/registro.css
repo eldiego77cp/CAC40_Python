@@ -183,25 +183,7 @@
     opacity: 0.8;
   }
 
-  #chkbx1, #chkbx2 {
-    width: 15px;
-    height: 20px;
-    border-radius: 8px;
-    outline: none;
-    border: 2px solid #c4c4c4;
-    /* padding: 0 30px; */
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-
-  #lab1, #lab2 {
-    width: 600px;
-    height: 20px;
-    font-size: 12px;
-    
-    
-  }
-
-    /** Media Queries para cortes de responsive design **/
+      /** Media Queries para cortes de responsive design **/
   
   @media (max-width: 900px) {
     .container {

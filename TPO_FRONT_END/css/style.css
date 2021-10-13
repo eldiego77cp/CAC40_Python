@@ -196,6 +196,7 @@
         background-color: #00000077;
         color: #ffffff;
         font-weight: bold;
+        text-align: center;
         font-size: 1.5em;
         position: absolute;
         z-index: 30;
@@ -232,6 +233,7 @@
         background-color: #00000077;
         color: #ffffff;
         font-weight: bold;
+        text-align: center;
         font-size: 1.2em;
         position: absolute;
         z-index: 30;
@@ -258,6 +260,7 @@
         background-color: #00000077;
         color: #ffffff;
         font-weight: bold;
+        text-align: center;
         font-size: 1.2em;
         position: absolute;
         z-index: 30;
@@ -463,6 +466,7 @@ div img {
 }
 
 /* ------------------------------------------------------ registrarse.html -------------------------------------------------------*/
+/*
 .registrarse_gc {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -478,6 +482,49 @@ div img {
 .form-check-input:checked {
         background-color: #2b78c2 !important;
         border-color: #2b78c2 !important;
+}
+.btn-colcss {
+        color: #fff !important;
+        background-color: #2b78c2 !important;
+        border-color: #2b78c2 !important;
+}
+.btn-colcss:hover {
+        color: #fff !important;
+        background-color: #0d6efd !important;
+        border-color: #0d6efd !important;
+}
+*/
+/* ------------------------------------------------------ contacto.html -------------------------------------------------------*/
+.contacto_gc {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 70px 1fr 100px;
+        grid-template-areas: 
+                "header_logo    header_nav      header_nav"
+                "aside1         main            aside2"
+                "footer         footer          footer";
+}
+.contacto_gi_aside1 {
+        grid-area: aside1;
+}
+.contacto_gi_main {
+        background-color: #7897ab;
+        grid-area: main;
+        text-align: left;
+}
+.contacto_gi_aside2 {
+        grid-area: aside2;
+}
+
+.header_bs {
+        color: #000000;
+        font-size: 27px;
+        padding: 10px;
+    }
+    
+.bigicon {
+    font-size: 18px;
+    color: #000000;
 }
 .btn-colcss {
         color: #fff !important;
