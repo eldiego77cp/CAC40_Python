@@ -372,7 +372,7 @@ div iframe {
         height: 200px;
 }
 div p {
-        text-align: center;
+        text-align: left;
         font-size: 14px;
         font-weight: 500;
         line-height: 30px;
@@ -389,6 +389,7 @@ div p a:active, div p a:visited, div p a:link {
 }
 div p a:hover {
         background-color: #ffffff;
+        border: 2px solid #000;
         color: #2b78c2;
         border-radius: 10px;
 }
@@ -477,7 +478,7 @@ div img {
 .form-check-input:checked {
         background-color: #2b78c2 !important;
         border-color: #2b78c2 !important;
-      }
+}
 .btn-colcss {
         color: #fff !important;
         background-color: #2b78c2 !important;

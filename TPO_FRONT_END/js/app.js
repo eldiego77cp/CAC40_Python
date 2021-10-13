@@ -16,7 +16,7 @@ form.addEventListener("submit", (e) => {
 
   engine(username, 0, "El nombre de usuario no puede estar en blanco");
   engine(email, 1, "El correo electrónico no puede estar en blanco");
-  engine(password, 2, "La clave no puede estar en blanco");
+  engine(password, 2, "La contraseña no puede estar en blanco");
 });
 
 let engine = (id, serial, message) => {

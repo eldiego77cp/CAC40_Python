@@ -28,7 +28,7 @@
   }
   
   .image {
-    background-image: url("../images/registro/illustration.svg");
+    background-image: url("../images/registro/kissclipart-diagram-technology-multimedia-learning-graphic-des-1110293547d9b2bc.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -86,7 +86,7 @@
   
   /** Estilo para los botones de logueo por redes sociales de Google y Facebook**/
   
-  .btn {
+  .btn1, .btn2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -94,9 +94,11 @@
   }
   
   .btn-1,
-  .btn-2 {
+  .btn-2,
+  .btn-3,
+  .btn-4 {
     padding: 10px 5px;
-    width: 100%;
+    width: 50%;
     display: flex;
     gap: 15px;
     justify-content: center;
@@ -111,6 +113,12 @@
     background-color: #4f70b5;
     color: white;
   }
+
+  .btn-3 {
+    background-color: blue;
+    color: white;
+  }
+
   
   .or {
     text-align: center;
@@ -152,9 +160,7 @@
     margin-top: 5px;
   }
   
-  /**
-  * ! style rules for button 
-  **/
+  /* Estilos para el boton */
   
   button {
     margin-top: 15px;
@@ -176,8 +182,26 @@
     border-color: #0d6efd !important;
     opacity: 0.8;
   }
-  
-  /** Media Queries para cortes de responsive design **/
+
+  #chkbx1, #chkbx2 {
+    width: 15px;
+    height: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    /* padding: 0 30px; */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #lab1, #lab2 {
+    width: 600px;
+    height: 20px;
+    font-size: 12px;
+    
+    
+  }
+
+    /** Media Queries para cortes de responsive design **/
   
   @media (max-width: 900px) {
     .container {
