@@ -31,7 +31,7 @@ let engine = (id, serial, message) => {
     errorMsg[serial].innerHTML = "";
     id.style.border = "2px solid green";
 
-    // iconoss
+    // iconos
     errorIcon[serial].style.opacity = "0";
     okIcon[serial].style.opacity = "1";
   }
