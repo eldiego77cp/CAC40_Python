@@ -432,21 +432,20 @@ for (let num = prompt("Ingrese un número", ""); num >= 1; num--) {
 */
 
 /* (25) */
-/*
+
 let str = "-"
 
 for (let num = 1; num <= 500; num++) {
     if(num % 5 === 0) {
-        document.write(`${num} <br>`);
-        document.write(str.repeat(40) + `<br>`);
+        console.log(`${num} <br>`);
+        console.log(str.repeat(40) + `<br>`);
     } else if(num % 4 === 0 && num % 9 === 0) {
-        document.write(`${num} (Múltiplo de 4 y de 9) <br>`);
+        console.log(`${num} (Múltiplo de 4 y de 9) <br>`);
     } else if(num % 4 === 0) {
-        document.write(`${num} (Múltiplo de 4) <br>`);
+        console.log(`${num} (Múltiplo de 4) <br>`);
     } else if(num % 9 === 0) {
-        document.write(`${num} (Múltiplo de 9) <br>`);
+        console.log(`${num} (Múltiplo de 9) <br>`);
     } else {
-        document.write(`${num} <br>`);
+        console.log(`${num} <br>`);
     }
 }
-*/
