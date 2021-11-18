@@ -11,7 +11,7 @@ def replaceChar (string, index, character):
     '''
     newList = list(string)
     
-    if index > len(newList):
+    if index > len(newList)-1:
         return print("El indice supera a la cantidad de caracteres del string ingresado")
     elif len(character) > 1:
         return print("La cantidad de caracteres a reemplazar tiene que ser 1")
