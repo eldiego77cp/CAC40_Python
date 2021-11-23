@@ -132,7 +132,8 @@ def company(companyName):
         
     Retorno
 
-    Retorna los 3 primeros
+    Retorna las 3 primeros letras que tienen mayor número de ocurrencias ordenado por cantidad de letras (descendente) y, en caso que haya 2 letras o más 
+    con igual cantidad de ocurrencias, las letras se ordenan de formas ascendente
     '''
     newCompanyName = companyName.replace(" ", "").lower()
     setLetters = set(newCompanyName)

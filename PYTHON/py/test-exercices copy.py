@@ -1,26 +1,19 @@
-companyName = "codo a codo"
-newCompanyName = companyName.replace(" ", "").lower()
-setLetters = set(newCompanyName)
-setLettersQ = set()
-listQLetters = []
-allPairsList = []
-sortedList = []
+def caracter_mas_usado(cadena):
+    cadena_lista= list(cadena.lower().replace(" ","")) #para elimanr los espacios vacios y dejar el texto en minúscula
+    dicc_letras = {}
+    rango = 3
 
-for l in setLetters:
-    setLettersQ.add(companyName.count(l))
-    listQLetters.append(str(companyName.count(l)) + " " + l)
+    for i in range(len(cadena_lista)):
+        #se genera un diccionario de las letras involucradas (únicas) y su cantidad
+        dicc_letras[cadena_lista[i]] = cadena_lista.count(cadena_lista[i])
 
-sortedLetters = sorted(setLetters)
-sortedNumbers = sorted(setLettersQ, reverse = True)
+    if len(dicc_letras)<3:
+        #en caso de que la cantidad de letras sea menor a las 3 requeridas
+        rango = len(dicc_letras)
 
-for number in sortedNumbers:
-    for letter in sortedLetters:
-        allPairsList.append(str(number) + " " + letter)
+    for i in range(rango):
+        #imprime el mayor para luego quitarlo del diccionariom, de esa forma siempre quitará los mayores
+        print(max(dicc_letras, key=dicc_letras.get), ":",max(dicc_letras.values()))
+        del(dicc_letras[max(dicc_letras, key=dicc_letras.get)])
 
-for pair in allPairsList:
-    if pair in listQLetters:
-        sortedList.append(pair)
-
-for index in range(0, 3):
-    print(sortedList[index])
-
+caracter_mas_usado("zoom tareaz")
