@@ -1,64 +1,47 @@
-'''
-string = "zootezzo"
-frequency = {}
-def counter(string):
-    for i in string:
-        if i not in frequency:
-            frequency[i] = 1
-            print(frequency)
-        else:
-            frequency[i] += 1
-            print(frequency)
-
-    return frequency
-
-print(frequency)
-
-sorted_frequency = (sorted(counter(string).items(), key=lambda x: x[1], reverse=True))
-
-for i in range(3):
-    print(sorted_frequency[i])
-'''
-
-def company(name):
+class Matrix:
     '''
-    Imprime los caracteres más usados de forma ascendente y la cantidad de veces que se usó cada caracter.
+    Representa una matriz de 3x3 dimensiones. Contiene 3 métodos que permiten las operaciones matematicas de suma y resta entre matrices y la multiplicación solo por un vector.
 
     Parámetros
-
-    namne = string
-        
-    Retorno
-
-    completar con el retorno
-    '''
-
-name = "Codo a Codo"
-
-# Crea un set con las letras únicas de la frase para usar con el for
-newSet = set(name.replace(" ", "").lower())
-
-# Crea una list con todas las letras de la frase, exceptuando los guiones para contar la cantidad de cada una de las letras
-newList = list(name.replace(" ", "").lower())
-
-# Crea un dict vacía para colocar la cantidad de veces que aparece una letra y dicha letra
-newPairList = []
-
-for letter in newSet:
-    counter = newList.count(letter)
-    if len(newPairList) == 0:
-        newPairList.append(letter + " " + str(counter))
-    elif:
-        len(newPairList) == 1 and 
-
-for 
-
-
-print(string1[2:len(string1)])
     
+    m1: matriz 1 de 3 x 3 (Definir una variable con numpy para hacer la matriz aleatoria. Ejemplo: m1 = np.random.randint(10, size=(3,3)) )
+    m2: matriz 2 de 3 x 3 (Definir una variable con numpy para hacer la matriz aleatoria. Ejemplo: m2 = np.random.randint(10, size=(3,3)) )
+    m3: matriz 3 de 3 x 3 (Definir una variable m3 = m1 o m3 = m2 para uilizar las matrices definidas oportunamente o crear una 3ra matriz de 3 x 3. Ejemplo: m3 = np.random.randint(10, size=(3,3)) )
+    v: vector de 3 x 1 (Definir una variable con numpy para hacer la matriz aleatoria. Ejemplo: m2 = np.random.randint(10, size=(3,1)) )
 
-print(newPairList)
-print(newPairList[0])
-print(newPairList[1])
-print(newPairList[2])
-print(newPairList[3])
+    '''
+    def __init__(self, m1, m2, m3, v):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+        self.v = v
+
+    def add(self):
+        return self.m1 + self.m2
+
+    def subs(self):
+        return self.m1 - self.m2
+    
+    def prod (self):
+        return self.m3 * self.v
+
+import numpy as np
+
+m1= np.random.randint(10, size=(3,3))
+m2= np.random.randint(10, size=(3,3))
+m3 = m1
+v= np.random.randint(10, size=(3,1))
+
+matriz = Matrix(m1, m2, m3, v)
+
+print(m1)
+
+print(m2)
+
+print(v)
+
+print(matriz.add())
+
+print(matriz.subs())
+
+print(matriz.prod())

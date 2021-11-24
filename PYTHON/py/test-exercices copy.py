@@ -1,19 +1,28 @@
-def caracter_mas_usado(cadena):
-    cadena_lista= list(cadena.lower().replace(" ","")) #para elimanr los espacios vacios y dejar el texto en minúscula
-    dicc_letras = {}
-    rango = 3
+class Complex(object):
 
-    for i in range(len(cadena_lista)):
-        #se genera un diccionario de las letras involucradas (únicas) y su cantidad
-        dicc_letras[cadena_lista[i]] = cadena_lista.count(cadena_lista[i])
+    def __init__(self, real, imag=0.0):
+        self.real = real
+        self.imag = imag
+        # Formats our results
+        print(self.real + self.imag)
 
-    if len(dicc_letras)<3:
-        #en caso de que la cantidad de letras sea menor a las 3 requeridas
-        rango = len(dicc_letras)
+    def __add__(self, other):
+        print('\nSum:')
+        return Complex(self.real + other.real, self.imag + other.imag)
 
-    for i in range(rango):
-        #imprime el mayor para luego quitarlo del diccionariom, de esa forma siempre quitará los mayores
-        print(max(dicc_letras, key=dicc_letras.get), ":",max(dicc_letras.values()))
-        del(dicc_letras[max(dicc_letras, key=dicc_letras.get)])
+    def __sub__(self, other):
+        print('\nDifference:')
+        return Complex(self.real - other.real, self.imag - other.imag)
+    
+    def __mul__(self, other):
+        print('\nProduct:')
+        return Complex((self.real * other.real) - (self.imag * other.imag),
+            (self.imag * other.real) + (self.real * other.imag))
 
-caracter_mas_usado("zoom tareaz")
+    def __truediv__(self, other):
+        print('\nQuotient:')
+        r = (other.real**2 + other.imag**2)
+        return Complex((self.real*other.real - self.imag*other.imag)/r,
+            (self.imag*other.real + self.real*other.imag)/r)
+
+Complex(4, 7)
